@@ -1,0 +1,20 @@
+
+.inf-width:hover{
+  -webkit-animation: 40s linear 20s infinite alternate infinity_width;
+  animation: 40s linear 20s infinite alternate infinity_width;
+  transition: 0.5s;
+  border-bottom: 6px solid #0B470D;
+  opacity: 1;
+  background-color: black;
+  
+}
+@keyframes infinity_width {
+  form{
+    border-bottom-width: 0;
+    opacity: 1;
+  }
+  to{
+    border-bottom-width: 100%;
+    opacity: 1;
+  }
+}
