@@ -46,7 +46,7 @@ class Contact extends Component {
           </div>
 
           <div className="md:ml-0 lg:ml-16">
-            <form name="Contact" method="POST" data-netlify="true">
+            <form name="Contact" method="POST" netlify data-netlify="true">
               <div className="max-w-lg">
                 <label className="text-xl text-black mb-2">Nom</label>
                 <input
