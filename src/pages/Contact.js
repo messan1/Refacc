@@ -46,7 +46,8 @@ class Contact extends Component {
           </div>
 
           <div className="md:ml-0 lg:ml-16">
-            <form name="contact-form" method="POST" netlify data-netlify="true" action="/merci" data-netlify-honeypot='bot-field'>
+            <form name="contact-form" action="//formspree.io/messanchristian@hotmail.com"
+            method="POST">
             <input type='hidden' name='form-name' value='contact-form' />
             <input type='hidden' name='bot-field'/>
           
