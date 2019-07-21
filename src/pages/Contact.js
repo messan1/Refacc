@@ -46,7 +46,10 @@ class Contact extends Component {
           </div>
 
           <div className="md:ml-0 lg:ml-16">
-            <form name="Contact" method="POST" netlify data-netlify="true">
+            <form name="contact-form" method="POST" netlify data-netlify="true" action="/merci" data-netlify-honeypot='bot-field'>
+            <input type='hidden' name='form-name' value='contact-form' />
+            <input type='hidden' name='bot-field'/>
+          
               <div className="max-w-lg">
                 <label className="text-xl text-black mb-2">Nom</label>
                 <input

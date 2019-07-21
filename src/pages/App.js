@@ -8,6 +8,7 @@ import Banner from './../components/Banner';
 import '../css/animation.css';
 import Galery from './Galery';
 import Jfac20 from './Jfac20';
+import Thanks from './Thanks';
 
 
 function App () {
@@ -80,6 +81,7 @@ function App () {
           <Route path="/nous-contacter" component={Contact} />
           <Route path="/galerie" component={Galery} />
           <Route path="/jfac" component={Jfac20} />
+          <Route path="/merci" component={Thanks} />
         </Switch>
       </div>
       <Footer />
