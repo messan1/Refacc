@@ -80,12 +80,11 @@ class Contact extends Component {
                   cols="54"
                   className="mb-8 border border-gray-300 mb-6 w-full"
                 />
-                <a
-                  className="bg-grefacc p-4 text-white font-bold"
-                  href="#google"
-                >
-                  Envoyer le message
-                </a>
+                <input
+                type="submit"
+                value="Envoyer"
+                className="bg-grefacc p-4 text-white font-bold"
+              />
               </div>
             </form>
           </div>
