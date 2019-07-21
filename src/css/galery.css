@@ -5,3 +5,9 @@
   background-attachment: fixed;
   animation: ease cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.inf-div-galery img {
+  transition: 1s;
+}
+.inf-div-galery img:hover{
+ transform: scale(2)
+}

@@ -9,7 +9,7 @@ const Galery = () => {
     <div>
       <a href="#google.ci" className="bg-grefacc p-2 text-white"> Tout</a>
     </div>
-    <div className="flex flex-wrap justify-center mt-8">
+    <div className="flex flex-wrap justify-center mt-8 inf-div-galery">
      
         <img className=" mb-4 w-auto h-56 object-cover" src={img} alt="" />
      

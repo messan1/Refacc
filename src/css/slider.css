@@ -11,12 +11,12 @@
 
 .sliderbody {
   font-size: 22.5%;
-  height: 50%;
+  height: 35rem;
   overflow: hidden;
 }
 
 .sliderbody {
-  background: #000;
+  background: transparent;
 }
 
 svg {
@@ -163,14 +163,17 @@ svg {
 }
 .slide:nth-child(2) .slide__bg {
   left: -50%;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-2.jpg");
+  background-image: url("../Images/lcmjfac20.jpg");
+  background-position: 700px;
+  background-size: 1000px auto;
+  background-repeat: no-repeat;
 }
 .slide:nth-child(2) .slide__overlay-path {
-  fill: #e1ccae;
+  fill: #F8DFD8;
 }
 @media (max-width: 991px) {
   .slide:nth-child(2) .slide__text {
-    background-color: rgba(225, 204, 174, 0.8);
+    background-color: (225, 204, 174, 0.8);
   }
 }
 .slide:nth-child(3) {

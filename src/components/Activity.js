@@ -4,9 +4,9 @@ import "../css/animation.css";
 
 const Activity = () =>{
   return(
-    <div className="h-auto mr-4 max-w-xs mb-8">
+    <div className="h-auto mr-4 max-w-xs mb-8  hover:shadow-lg transition">
       <div className="relative">
-        <div className="h-full w-full absolute  opacity-50 z-10 inf-width border-grefacc" />
+        <div className="h-full w-full absolute  z-10 border-grefacc" />
 
         <img src={imgconf} alt="" className="object-cover" />
       </div>

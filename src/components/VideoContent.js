@@ -10,7 +10,7 @@ const VideoContent = () =>{
     <FontAwesomeIcon icon={faPlayCircle} color="white" size="3x" className="absolute" />
     </div>
     <h1 className="font-bold text-2xl p-2 absolute text-white bottom-0">Lancement des JFACC
-    2019 par le Dr Adou </h1>
+    2019 par le Ministre</h1>
     <img src={cp} alt="" className="object-cover" />
     </div>
   )

@@ -7,6 +7,7 @@ module.exports = {
      'tiny':'200px',
       sm: '640px',
       md: '768px',
+     'mdi':'948px',
       lg: '1024px',
       xl: '1280px',
       xxl: '1500px',
@@ -17,6 +18,7 @@ module.exports = {
       black: '#000',
       white: '#fff',
       grefacc:"#3F9F42",
+     'jfaccolor':'#DA591A',
 
       gray: {
         100: '#f7fafc',
@@ -149,6 +151,7 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '25rem',
+      '70':'30rem',
 
     },
     backgroundColor: theme => theme('colors'),

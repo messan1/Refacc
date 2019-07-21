@@ -18,3 +18,10 @@
     opacity: 1;
   }
 }
+.enter{
+  opacity: 1;
+  transition: opacity 3000ms linear 3000ms
+}
+.transition{
+  transition: 4s
+}
