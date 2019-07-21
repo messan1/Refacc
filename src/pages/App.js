@@ -78,10 +78,10 @@ function App () {
       <div>
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route path="/nous-contacter" component={Contact} />
-          <Route path="/galerie" component={Galery} />
-          <Route path="/jfac" component={Jfac20} />
-          <Route path="/merci" component={Thanks} />
+          <Route exact path="/nous-contacter" component={Contact} />
+          <Route exact path="/galerie" component={Galery} />
+          <Route exact path="/jfac" component={Jfac20} />
+          <Route exact path="/merci" component={Thanks} />
         </Switch>
       </div>
       <Footer />
