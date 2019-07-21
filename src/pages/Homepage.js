@@ -16,6 +16,7 @@ import {Helmet} from 'react-helmet';
 import styled, {keyframes} from 'styled-components';
 import {fadeInLeft} from 'react-animations';
 import Awards from '../components/Awards';
+import AnimatedSlider from '../components/AnimatedSlider';
 
 const fadeInAnimation = keyframes`${fadeInLeft}`;
 
@@ -40,19 +41,29 @@ class Homepage extends Component {
         <Helmet>
           <title>Refacc - Lancement des JFAC 2020</title>
         </Helmet>
-        <Slider />
+        <AnimatedSlider />
+       
         <section className="sm:ml-16 sm:mr-16 tiny:ml-6 tiny:mr-6 md:mr-16 md:ml-16 lg:mr-40 lg:ml-40 xl:mr-56 xl:ml-56 xxl:mr-64 xxl:ml-64">
           <About />
 
           <div className="flex flex-wrap justify-around items-center">
             <BouncyDiv>
-              <Activity />
+              <Activity
+                title="Conférences"
+                content="Tables rondes, débats, dédicaces : découvrez les rendez-vous qui rythmeront les cinq jours de l’événement touristique de référence."
+              />
             </BouncyDiv>
             <BouncyDiv1>
-              <Activity />
+              <Activity
+                title="Formations"
+                content="Tables rondes, débats, dédicaces : découvrez les rendez-vous qui rythmeront les cinq jours de l’événement touristique de référence."
+              />
             </BouncyDiv1>
             <BouncyDiv2>
-              <MoreActivity />
+              <MoreActivity
+                title="Formations"
+                content="Tables rondes, débats, dédicaces : découvrez les rendez-vous qui rythmeront les cinq jours de l’événement touristique de référence."
+              />
             </BouncyDiv2>
 
           </div>

@@ -1,9 +1,9 @@
 import React from 'react';
-import partlogo from "../Images/l.png"
-const PartnersLogo = () =>{
+
+const PartnersLogo = ({img}) =>{
   return(
-    <div className="bg-white h-auto m-4 w-auto">
-      <img src={partlogo} alt="" className="object-cover" />
+    <div className="bg-white h-auto m-4 w-20">
+      <img src={img} alt="" className="object-cover" />
     </div>
   )
 }

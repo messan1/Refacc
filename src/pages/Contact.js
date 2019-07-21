@@ -23,9 +23,7 @@ class Contact extends Component {
               {' '}
               Contacter
             </h1>
-            <p>
-              Visit our agency or simply send us an email anytime you want. If you have any questions, please feel free to contact us.
-            </p>
+      
             <div>
               <ContactBox
                 icon={faMailBulk}

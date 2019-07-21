@@ -1,33 +1,19 @@
 import React from 'react';
-import testimg from '../Images/aboutimg.png';
 
-const SpeakerBox = ({right,left}) => {
+const SpeakerBox = ({right,left,img,content,titre,person}) => {
   return (
-    <div className="shadow-lg flex p-8 max-w-4xl mdi:max-w-4xl md:max-w-2xl xl:max-w-4xl lg:max-w-4xl justify-around items-center mt-8 mb-12 bg-white md:flex-wrap tiny:flex-wrap sm:flex-wrap xs:flex-wrap mdi:flex-no-wrap lg:flex-no-wrap">
-    {right && <img src={testimg} alt="" className="object-cover max-w-sm"/>}
-      <div className="m-10" >
+    <div className="shadow-lg flex p-8 max-w-2xl mdi:max-w-4xl md:max-w-2xl xl:max-w-4xl lg:max-w-4xl justify-around items-center mt-8 mb-12 bg-white md:flex-wrap tiny:flex-wrap sm:flex-wrap xs:flex-wrap mdi:flex-no-wrap lg:flex-no-wrap">
+    {right && <div className="m-2 h-auto max-w-lg"> <img src={img} alt="" className="object-cover block h-auto"/> </div>}
+      <div className="lg:m-10 xl:m-10 mdi:m-10 sm:m-0 lg:max-w-md xl:max-w-md mdi:max-w-md" >
         <h1 className="font-bold text-3xl mb-2 " >
-          Prof Joseph SEKA
-          SEKA,
+         {person}
         </h1>
-        <h3 className="italic  mb-4">Ministre de l'environnemnet et du developpement durable</h3>
+        <h3 className="italic  mb-4">{titre}</h3>
         <p className="text-justify">
-          "Nous sommes tous concernés par les
-          conséquences de la dégradation de notre
-          environnement et du changement climatique
-          et aucun pays africain, aucun secteur, aucune
-          couche sociale n'est épargnée. Les enjeux sont
-          réels et palpables. Et heureusement les
-          solutions existent pour proposer de nouveaux
-          modèles économiques plus durables basés sur
-          une croissance intelligente, équitable et
-          soucieuse des dés environnementaux et
-          sociaux. L’institution des journées africaines de
-          l'écologie se présente comme un espace
-          privilégié d’échange entre experts et de{' '}
+       {content}
         </p>
       </div>
-      {left && <img src={testimg} alt="" className="object-cover max-w-sm"/>}
+      {left && <div className="m-2 h-auto max-w-lg"> <img src={img} alt="" className="object-cover"/> </div>}
     </div>
   );
 };

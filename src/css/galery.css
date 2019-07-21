@@ -8,6 +8,3 @@
 .inf-div-galery img {
   transition: 1s;
 }
-.inf-div-galery img:hover{
- transform: scale(2)
-}
