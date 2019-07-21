@@ -70,9 +70,11 @@ const Participants = () => {
             className="w-full border border-gray-300  mb-6 h-16"
           />
         </div>
-        <a className="bg-grefacc p-4 text-white font-bold" href="#google">
-        Valider
-      </a>
+        <input
+        type="submit"
+        value="Envoyer"
+        className="bg-grefacc p-4 text-white font-bold"
+      />
       </form>
     </div>
   );
