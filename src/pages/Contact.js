@@ -46,7 +46,11 @@ class Contact extends Component {
           </div>
 
           <div className="md:ml-0 lg:ml-16">
-            <form className="">
+            <form name="Formulaire de contact" action="//formspree.io/messanchristian@hotmail.com"
+            method="POST">
+            <input type='hidden' name='form-name' value='contact-form' />
+            <input type='hidden' name='bot-field'/>
+          
               <div className="max-w-lg">
                 <label className="text-xl text-black mb-2">Nom</label>
                 <input
@@ -80,12 +84,11 @@ class Contact extends Component {
                   cols="54"
                   className="mb-8 border border-gray-300 mb-6 w-full"
                 />
-                <a
-                  className="bg-grefacc p-4 text-white font-bold"
-                  href="#google"
-                >
-                  Envoyer le message
-                </a>
+                <input
+                type="submit"
+                value="Envoyer"
+                className="bg-grefacc p-4 text-white font-bold"
+              />
               </div>
             </form>
           </div>

@@ -1,6 +1,11 @@
 import React from 'react';
-import img from '../Images/cp.jpg';
 import "../css/galery.css"
+import img1 from "../Images/galeries/1.jpg"
+import img2 from "../Images/galeries/2.jpg"
+import img3 from "../Images/galeries/3.jpg"
+import img4 from "../Images/galeries/4.jpg"
+import img5 from "../Images/galeries/5.jpg"
+import img6 from "../Images/galeries/6.jpg"
 
 const Galery = () => {
   return (
@@ -11,18 +16,18 @@ const Galery = () => {
     </div>
     <div className="flex flex-wrap justify-center mt-8 inf-div-galery">
      
-        <img className=" mb-4 w-auto h-56 object-cover" src={img} alt="" />
+        <img className=" m-2 w-auto h-56 object-cover" src={img1} alt="" />
      
       
-        <img className=" mb-4 w-auto h-56 object-cover" src={img} alt="" />
+        <img className=" m-2 w-auto  h-56 object-cover" src={img2} alt="" />
       
-        <img className=" mb-4 w-auto h-56 object-cover" src={img} alt="" />
+        <img className=" m-2 w-auto h-56 object-cover" src={img3} alt="" />
       
-        <img className=" mb-4 w-auto h-56 object-cover" src={img} alt="" />
+        <img className=" m-2 w-auto h-56 object-cover" src={img4} alt="" />
       
-        <img className=" mb-4 w-auto h-56 object-cover" src={img} alt="" />
+        <img className=" m-2 w-auto h-56 object-cover" src={img5} alt="" />
       
-        <img className=" mb-4 w-auto h-56 object-cover" src={img} alt="" />
+        <img className=" m-2 w-auto h-56 object-cover" src={img6} alt="" />
     </div>
   </div>
     </div>

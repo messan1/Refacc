@@ -1,48 +1,56 @@
 import React from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faChevronRight, faSearch} from '@fortawesome/free-solid-svg-icons';
-
+import "../css/footer.css"
+import {Link} from 'react-router-dom'
 const Footer = () => {
   return (
+    <footer className="footer-distributed">
 
-   <div class=" bg-grey-lighter lg:pl-64 lg:pr-64 pb-16 p-8 m-auto bg-black ">
-   <div class="sm:flex sm:justify-center sm:items-center bg-black w-full text-white">
- <div class="sm:w-1/4 h-auto md:mr-16">
-     <div class="text-orange mb-2">Orange</div>
-     <ul class="list-reset leading-normal">
-         <li class="hover:text-orange text-grey-darker">One</li>
-         <li class="hover:text-orange text-grey-darker">Two</li>
-         <li class="hover:text-orange text-grey-darker">Three</li>
-         <li class="hover:text-orange text-grey-darker">Four</li>
-         <li class="hover:text-orange text-grey-darker">Five</li>
-         <li class="hover:text-orange text-grey-darker">Six</li>
-         <li class="hover:text-orange text-grey-darker">Seven</li>
-         <li class="hover:text-orange text-grey-darker">Eight</li>
-     </ul>
- </div>
- <div class="sm:w-1/4 h-auto sm:mt-0 mt-8 md:mr-16">
-     <div class="text-blue mb-2">Blue</div>
-     <ul class="list-reset leading-normal">
-         <li class="hover:text-blue text-grey-darker">One</li>
-         <li class="hover:text-blue text-grey-darker">Two</li>
-         <li class="hover:text-blue text-grey-darker">Three</li>
-     </ul>
+    <div className="footer-left">
 
+        <h3>REFACC</h3>
 
- </div>
- <div class="sm:w-1/4 h-auto sm:mt-0 mt-8 md:mr-16">
-           <div class="text-green-dark mb-2">Green-dark</div>
-     <ul class="list-reset leading-normal">
-         <li class="hover:text-green-dark text-grey-darker">One</li>
-         <li class="hover:text-green-dark text-grey-darker">Two</li>
-         <li class="hover:text-green-dark text-grey-darker">Three</li>
-     </ul>
+        <p className="footer-links">
+            <Link href="/">Acceuil</Link>
+            ·
+            <Link href="/jfac">JFAC 2020</Link>
+            ·
+            <Link href="/nous-contacter">NousContacter</Link>
+        </p>
 
- </div>
+        <p className="footer-company-name">Refacc &copy; 2019</p>
+    </div>
 
+    <div className="footer-center">
 
-</div>
-   </div>
-  );
+        <div>
+            <i className="fa fa-phone"></i>
+            <p>+225 09536206</p>
+        </div>
+
+        <div>
+            <i className="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">climatrefacc@gmail.com</a></p>
+        </div>
+
+    </div>
+
+    <div className="footer-right">
+
+        <p className="footer-company-about">
+            <span>A propos du REFACC</span>
+            Le réseau des Experts africains pour les Forêt l'agriculture,l'énergie et les changements climatiques, en abrégé REFACC est une association non lucrative créée par un consortion d'expert africains en vue de renforcerle dialogue et la coopération avec les acteurs des pays africains. Ce réseau apolitique se propose d'apporter une dynamique à la lutte contre les changements climatiques dans les collectivités et aider les communautés rurales les plus vulnérables. </p>
+
+        <div className="footer-icons">
+
+            <a href="https://www.facebook.com/refaccclimat/"><i className="fa fa-facebook"></i></a>
+           
+
+        </div>
+
+    </div>
+
+</footer>
+
+   );
 };
 export default Footer;

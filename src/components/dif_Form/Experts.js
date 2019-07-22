@@ -5,7 +5,8 @@ import * as yup from 'yup';
 const Formik = ({values, handleChange,errors}) => {
   return (
     <div className="md:ml-0 lg:ml-4 max-w-md">
-      <form className=""  name="Experts" method="POST" data-netlify="true">
+      <form  name="Experts"  action="//formspree.io/messanchristian@hotmail.com"
+      method="POST">
         <div className="">
           <p className="text-red-700 mb-4">{errors.name}</p>
           <label className="text-xl text-black mb-2">Nom & prénoms</label>

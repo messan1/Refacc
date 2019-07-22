@@ -3,7 +3,8 @@ import React from 'react';
 const Presse = () => {
   return (
     <div className="md:ml-0 lg:ml-4">
-      <form className="" name="Presse" method="POST" data-netlify="true">
+      <form name="Presse"  action="//formspree.io/messanchristian@hotmail.com"
+      method="POST">
         <div className="">
           <label className="text-xl text-black mb-2">Nom & prénoms</label>
           <input
