@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink, Switch, Route} from 'react-router-dom';
+import {NavLink, Switch, Route,Redirect} from 'react-router-dom';
 import Homepage from './Homepage';
 import Contact from './Contact';
 import Navbar from './../components/Navbar';
@@ -82,6 +82,7 @@ function App () {
           <Route exact path="/galerie" component={Galery} />
           <Route exact path="/jfac" component={Jfac20} />
           <Route exact path="/merci" component={Thanks} />
+          <Redirect to="/" />
         </Switch>
       </div>
       <Footer />

@@ -9,7 +9,8 @@ import Galery from '../components/Galery';
 import Counter from '../components/Counter';
 import Partners from '../components/Partners';
 import '../css/Homepage.css';
-
+import imgconf from "../Images/Activities/act1.png";
+import fomation from "../Images/formation.jpg"
 //Seo
 import {Helmet} from 'react-helmet';
 //Animation
@@ -41,6 +42,7 @@ class Homepage extends Component {
         <Helmet>
           <title>Refacc - Lancement des JFAC 2020</title>
         </Helmet>
+        
         <AnimatedSlider />
        
         <section className="sm:ml-16 sm:mr-16 tiny:ml-6 tiny:mr-6 md:mr-16 md:ml-16 lg:mr-40 lg:ml-40 xl:mr-56 xl:ml-56 xxl:mr-64 xxl:ml-64">
@@ -49,21 +51,21 @@ class Homepage extends Component {
           <div className="flex flex-wrap justify-around items-center">
             <BouncyDiv>
               <Activity
+              img={imgconf}
                 title="Conférences"
                 content="Tables rondes, débats, dédicaces : découvrez les rendez-vous qui rythmeront les cinq jours de l’événement touristique de référence."
               />
             </BouncyDiv>
             <BouncyDiv1>
               <Activity
+              img={fomation}
                 title="Formations"
-                content="Tables rondes, débats, dédicaces : découvrez les rendez-vous qui rythmeront les cinq jours de l’événement touristique de référence."
+                content="Durant les JFAC, les experts dans le domaine de l'écologie offrent des formations aux différents participants. "
               />
             </BouncyDiv1>
             <BouncyDiv2>
               <MoreActivity
-                title="Formations"
-                content="Tables rondes, débats, dédicaces : découvrez les rendez-vous qui rythmeront les cinq jours de l’événement touristique de référence."
-              />
+               />
             </BouncyDiv2>
 
           </div>
@@ -72,11 +74,15 @@ class Homepage extends Component {
             ACTU VIDEO REFACC
           </h6>
           <div className="bg-grefacc h-1 w-16 m-auto" />
-          <div className="flex items-center flex-wrap justify-center">
+          <div className="flex  items-center flex-wrap justify-around">
 
-            <VideoContent />
-            <VideoContent />
-            <Plus />
+            <VideoContent
+              url="https://www.youtube.com/watch?v=_RpGsp9GTCs&t=1s"
+            />
+            <VideoContent 
+              url="https://www.youtube.com/watch?v=-f9FuE5epnY"
+            />
+    
           </div>
           <h6 className="text-center font-bold text-2xl mt-8 ">
             LA GALERIE DES JFAC
@@ -101,36 +107,7 @@ class Homepage extends Component {
 
           </BouncyDiv>
         </section>
-        <h6 className="text-center font-bold text-2xl mt-8">
-          LES CHAMPIONS ECOLOGIQUES 2018-2019
-        </h6>
-        <div className="bg-grefacc h-1 w-16 m-auto mb-8" />
-        <div className="flex justify-center items-center flex-wrap">
 
-          <Awards />
-          <Awards />
-          <Awards />
-          <Awards />
-          <Awards />
-
-          <Awards />
-          <Awards />
-          <Awards />
-          <Awards />
-          <Awards />
-          <Awards />
-          <Awards />
-
-          <Awards />
-          <Awards />
-          <Awards />
-          <Awards />
-          <Awards />
-          <Awards />
-          <Awards />
-          <Awards />
-
-        </div>
         <Partners />
 
       </div>

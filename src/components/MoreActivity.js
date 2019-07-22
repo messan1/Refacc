@@ -7,7 +7,7 @@ const MoreActivity = () =>{
       <h3 className="font-bold text-3xl text-black mb-4">En savoir plus <br/>
       sur les activités</h3>
       <div className="h-1 bg-grefacc w-24 mb-4"/>
-      <p className="text-justify mb-8 text-gray-600">Morbi iaculis, tortor id tincidunt luctus, est mi dapibus lectus, sed efficitur tellus lacus sit amet ligula. Aenean aliquam quam velit, sed bibendum tortor</p>
+      <p className="text-justify mb-8 text-gray-600"></p>
       <a href="#google.ci" className="text-gray-700"> 
         En savoir plus
         <FontAwesomeIcon icon={faChevronRight} color="#3F9F42" className="ml-2"/>
