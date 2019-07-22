@@ -3,7 +3,7 @@ import React from 'react';
 const Participants = () => {
   return (
     <div className="md:ml-0 lg:ml-4 max-w-md">
-      <form className="" name="Participants"  action="//formspree.io/messanchristian@hotmail.com"
+      <form className="" name="Participants"  action="//formspree.io/infinity.soft@aol.com"
       method="POST">
         <div className="">
           <label className="text-xl text-black mb-2">Nom & prénoms</label>

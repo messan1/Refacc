@@ -8,7 +8,7 @@ import * as yup from 'yup';
 const Formik = ({values,handleChange,errors}) => {
   return (
     <div className="md:ml-0 lg:ml-4">
-      <form name="Exposants" action="//formspree.io/messanchristian@hotmail.com"
+      <form name="Exposants" action="//formspree.io/infinity.soft@aol.com"
       method="POST" >
         <div className="">
         <p className="text-red-700 mb-4">{errors.name}</p>

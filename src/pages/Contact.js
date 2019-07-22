@@ -46,7 +46,7 @@ class Contact extends Component {
           </div>
 
           <div className="md:ml-0 lg:ml-16">
-            <form name="Formulaire de contact" action="//formspree.io/messanchristian@hotmail.com"
+            <form name="Formulaire de contact" action="//formspree.io/infinity.soft@aol.com"
             method="POST">
             <input type='hidden' name='form-name' value='contact-form' />
             <input type='hidden' name='bot-field'/>
