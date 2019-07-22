@@ -7,6 +7,7 @@ import Popup from 'reactjs-popup';
 import BurgerIcon from './burgerIcon';
 import Menu from './Menu';
 
+import { Link } from 'react-router-dom';
 const styles = {
   fontFamily: 'sans-serif',
   textAlign: 'center',
@@ -22,9 +23,9 @@ const Navbar = ({children}) => {
   return (
     <nav className="lg:px-0 px-0 pt-8 pb-8 bg-white flex flex-wrap items-center lg:py-0 py-2">
       <div className="flex flex-1  lg:justify-center md:justify-around sm:justify-around xs:justify-around tiny:justify-around">
-        <a href="#google.ci">
+        <Link href="/">
           <img src={logo} alt="Le logo du refacc" />
-        </a>
+        </Link>
         <label
           for="menu-toggle"
           className="pointer-cursor lg:hidden block self-center hidden"
