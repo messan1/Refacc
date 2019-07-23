@@ -3,7 +3,8 @@ import React from 'react';
 const Participants = () => {
   return (
     <div className="md:ml-0 lg:ml-4 max-w-md">
-      <form className="" name="Particiapnst" method="POST" data-netlify="true">
+      <form className="" name="Participants"  action="//formspree.io/infinity.soft@aol.com"
+      method="POST">
         <div className="">
           <label className="text-xl text-black mb-2">Nom & prénoms</label>
           <input
@@ -70,9 +71,11 @@ const Participants = () => {
             className="w-full border border-gray-300  mb-6 h-16"
           />
         </div>
-        <a className="bg-grefacc p-4 text-white font-bold" href="#google">
-        Valider
-      </a>
+        <input
+        type="submit"
+        value="Envoyer"
+        className="bg-grefacc p-4 text-white font-bold"
+      />
       </form>
     </div>
   );

@@ -2,11 +2,10 @@ import React, {Component} from 'react';
 import {Helmet} from 'react-helmet';
 import '../css/Jfac20.css';
 import JfacParticipation from '../components/JfacParticipation';
-import testimg from '../Images/aboutimg.png';
 import SpeakerBox from '../components/SpeakerBox';
 import Partners from '../components/Partners';
 import Form from '../components/Form';
-
+import {Link} from "react-router-dom"
 
 //speakers
 import speak2 from "../Images/speakers/1.png"
@@ -25,23 +24,24 @@ class Jfac20 extends Component {
         <Helmet>
           <title>Refac - En route pour les JFAC 2020</title>
         </Helmet>
-        <header className="inf-j20 flex justify-center flex-row pt-24 pb-24 items-center flex-wrap p-8">
-          <div className="w-full flex flex-wrap justify-center items-center content-center">
+        <header className="inf-j20 flex justify-center flex-row pt-24 pb-24 items-center flex-wrap p-8 relative">
+        <div className="absolute bg-black opacity-50 h-full w-full"/>
+          <div className="w-full flex flex-wrap justify-center items-center content-center relative z-50">
             <div className=" mb-8">
               <p className="text-white text-lg max-w-sm">
                 Du 16 au 22 Mars 2020 à  Toumodi et Yamoussoukro
               </p>
-              <h1 className="text-2xl lg:text-5xl xl:text-4xl md:text-3xl sm:text-3xl mdi:text-2xl text-white">
+              <h1 className="text-4xl lg:text-4xl xl:text-7xl md:text-3xl sm:text-3xl mdi:text-2xl text-white">
                 LANCEMENT DES <br />
                 JFAC 2020
               </h1>
               <div className="mt-8 m-auto flex flex-wrap justify-between items-center">
-                <a
-                  href="#google.ci"
-                  className="p-4 m-4 pl-8 pr-8 bg-white text-black lg:ml-8 font-bold"
+                <Link
+                  to="/nous-contacter"
+                  className="p-4 m-4 pl-8 pr-8 bg-jfaccolor text-white lg:ml-8 font-bold"
                 >
                   Nous contacter
-                </a>
+                </Link>
               </div>
             </div>
             <Form/>
@@ -68,7 +68,8 @@ class Jfac20 extends Component {
                   de lutte contre les changements climatiques et
                   d’atteinte des Objectifs du Développement
                   Durable (ODD). Il est important de se trouver, de
-                  l’enjeu climatique nous y oblige», c’est ce qu’a
+                  l’enjeu climatique nouimport { Link } from 'react-router-dom';
+s y oblige», c’est ce qu’a
                   déclaré le ministre ivoirien de l’Environnement
                   et du Développement durable, Séka Séka{' '}
                 </p>
@@ -83,6 +84,8 @@ class Jfac20 extends Component {
               </div>
 
             </div>
+            <h1 className="text-center text-4xl font-bold">Pour les JFAC 2019</h1>
+            <p className="text-center text-grefacc mt-2 font-bold text-xl">Les avis</p>
             <div className="w-full flex justify-center flex-wrap flex-row ">
               <SpeakerBox 
                     img={speak1}
@@ -141,6 +144,7 @@ class Jfac20 extends Component {
               left={true} />
     
             </div>
+            <h1 className="text-center font-bold text-4xl mb-8">EDITION <span className="text-jfaccolor">JFAC 2020</span></h1>
             <div className="w-screen bg-jfaccolor p-8 flex justify-center flex-wrap items-center ">
               <div className=" xs:w-full sm:w-full p-4 md:w-1/3 mr-8">
                 <p className="text-white">PRET?</p>

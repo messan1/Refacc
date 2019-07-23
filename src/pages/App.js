@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink, Switch, Route} from 'react-router-dom';
+import {NavLink, Switch, Route,Redirect} from 'react-router-dom';
 import Homepage from './Homepage';
 import Contact from './Contact';
 import Navbar from './../components/Navbar';
@@ -8,6 +8,7 @@ import Banner from './../components/Banner';
 import '../css/animation.css';
 import Galery from './Galery';
 import Jfac20 from './Jfac20';
+import Thanks from './Thanks';
 
 
 function App () {
@@ -60,7 +61,7 @@ function App () {
         <NavLink
           className="text-lg lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-grefacc text-black font-bold"
           exact
-          to="/galerie"
+          to="/"
           activeClassName="active"
         >
           Galerie
@@ -77,9 +78,11 @@ function App () {
       <div>
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route path="/nous-contacter" component={Contact} />
-          <Route path="/galerie" component={Galery} />
-          <Route path="/jfac" component={Jfac20} />
+          <Route exact path="/nous-contacter" component={Contact} />
+          <Route exact path="/galerie" component={Galery} />
+          <Route exact path="/jfac" component={Jfac20} />
+          <Route exact path="/merci" component={Thanks} />
+          <Redirect to="/" />
         </Switch>
       </div>
       <Footer />

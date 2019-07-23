@@ -35,10 +35,12 @@ const Partners = () => {
       <div className="flex justify-center flex-wrap">
         <JfacTalker
         img={partlogo}
+        name="Atoo.ci"
           text="APA-Abidjan (Côte d’Ivoire)- Les deuxièmes Journées africaines de l’écologie et des changements climatiques (JFAC) prévues à Abidjan du 18 au 22 mars 2019 autour du thème, « comment réussir les transitions énergétique et écologique dans les pays d’Afrique ?"
         />
         <JfacTalker 
         img={partlog2}
+        name="ABIDJAN EXPRESS"
         text="Lancement à Abidjan des 2èmes Journées africaines de l’écologie et des changements climatiques prévues du 18 au 22 mars 2019 au palais de la culture de Treichville..." />
       </div>
       <div className="flex items-center mr-2 justify-center">
