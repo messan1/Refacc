@@ -1,6 +1,9 @@
 import React from 'react';
 import "../css/footer.css"
 import {Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faPhone,faEnvelope} from "@fortawesome/free-solid-svg-icons"
+
 const Footer = () => {
   return (
     <footer className="footer-distributed">
@@ -22,13 +25,13 @@ const Footer = () => {
 
     <div className="footer-center">
 
-        <div>
-            <i className="fa fa-phone"></i>
+        <div className="mb-4">
+        <FontAwesomeIcon icon={faPhone} color="white" className="mr-4"/>
             <p>+225 09536206</p>
         </div>
 
         <div>
-            <i className="fa fa-envelope"></i>
+        <FontAwesomeIcon icon={faEnvelope} color="white" className="mr-4"/>
             <p><a href="mailto:support@company.com">climatrefacc@gmail.com</a></p>
         </div>
 

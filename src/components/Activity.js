@@ -3,7 +3,7 @@ import "../css/animation.css";
 
 const Activity = ({title,content,img}) =>{
   return(
-    <div className="h-auto mr-4 max-w-xs mb-8  hover:shadow-lg transition">
+    <div className="shadow-md   p-2 h-auto mr-4 max-w-xs mb-8  hover:shadow-lg transition">
       <div className="relative">
         <div className="h-full w-full absolute  z-10 border-grefacc" />
 
