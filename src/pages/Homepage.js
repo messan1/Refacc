@@ -19,6 +19,8 @@ import styled, {keyframes} from 'styled-components';
 import {fadeInLeft} from 'react-animations';
 import SlideShow from '../components/SlideShow';
 
+
+
 const fadeInAnimation = keyframes`${fadeInLeft}`;
 
 const BouncyDiv = styled.div`

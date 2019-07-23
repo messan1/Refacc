@@ -13,6 +13,9 @@ import speak3 from "../Images/speakers/2.png"
 import speak1 from "../Images/speakers/jp.png"
 import lc from "../Images/speakers/lc.png"
 
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 class Jfac20 extends Component {
   constructor (props) {
     super (props);
@@ -75,7 +78,8 @@ s y oblige», c’est ce qu’a
                 </p>
               </div>
               <div className="m-2 order-first h-auto max-w-4xl sm:max-w- mdi:max-w-sm ">
-                <img
+                <LazyLoadImage
+                effect="blur"
                   src={lc}
                   alt=""
                   className="object-cover max-w-sm h-auto w-full mdi:absolute"
