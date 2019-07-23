@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="flex flex-1 justify-around items-start h-auto mb-24 md:flex-no-wrap sm:flex-wrap tiny:flex-wrap">
  
-      <img src={aboutimg} className="p-0 object-cover h-auto max-w-sm p-6 " alt="Mr Marcel Yao" />
+      <img src={aboutimg} className="p-0 object-cover h-auto xl:max-w-sm lg:max-w-sm md:max-w-sm mdi:max-w-sm sm:max-w-xs tiny:max-w-xs p-6 " alt="Mr Marcel Yao" />
       <div className="w-2/4 bg-white md:ml-8 self-start sm:w-full sm:m-0 tiny:w-full">
         <h5 className="font-bold text-sm mb-2 text-grefacc">A propos</h5>
         <h6 className="font-bold text-2xl mb-2">Le REFACC en quelques mots</h6>

@@ -61,8 +61,8 @@ const Navbar = ({children}) => {
 
         </div>
         <div style={styles} className="lg:hidden">
-        <div className="flex justify-center items-center">
-        <p className="font-bold">Menu</p>
+        <div className="flex justify-center items-center mr-4">
+        <p className="font-bold m-4">Menu</p>
         <Popup
           modal
           overlayStyle={{background: 'rgba(255,255,255,0.98'}}
