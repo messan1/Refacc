@@ -15,6 +15,7 @@ import lc from "../Images/speakers/lc.png"
 
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import place from '../Images/partPlace/placeholder.jpg'
 
 class Jfac20 extends Component {
   constructor (props) {
@@ -84,6 +85,7 @@ s y oblige», c’est ce qu’a
                   alt=""
                   className="object-cover max-w-sm h-auto w-full mdi:absolute"
                   style={{left: '490px', bottom: '25px'}}
+                  placeholderSrc={place}
                 />
               </div>
 
