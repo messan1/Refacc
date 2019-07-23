@@ -101,9 +101,9 @@ changements climatiques (JFAC 2019),qui sont à leur 2ème édition,sont le 1er 
           LES CHIFFRES DES JFAC 2019
         </h6>
         <div className="bg-grefacc h-1 w-16 m-auto" />
-        <section className="inf-bg-counter justify-center sm:pl-8 sm:pr-8 tiny:pl-4 tiny:pr-4  md:pl-48 md:pr-48 xl:pl-64 xl:pr-64">
+        <section className="inf-bg-counter justify-center ">
 
-          <BouncyDiv className="flex justify-center mt-8 items-center flex-wrap mb-8 h-64">
+          <BouncyDiv className="flex justify-around m-8 items-center flex-wrap  h-64">
 
             <Counter number={12000} text="Visiteurs" />
 

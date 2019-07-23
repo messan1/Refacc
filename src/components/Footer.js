@@ -10,7 +10,7 @@ const Footer = () => {
 
     <div className="footer-left">
 
-        <h3>REFACC</h3>
+        <p className='text-white text-7xl'>REFACC</p>
 
         <p className="footer-links">
             <Link href="/">Acceuil</Link>
