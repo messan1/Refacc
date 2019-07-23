@@ -62,7 +62,7 @@ const Partners = () => {
         <PartnersLogo img={part10} />
         <PartnersLogo img={part11} />
         <PartnersLogo img={part12} />
-        <PartnersLogo img={part3} />
+        <PartnersLogo img={part13} />
 
       </div>
     </div>

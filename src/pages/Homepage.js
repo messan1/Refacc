@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import Slider from './../components/Slider';
+
 import About from '../components/About';
 import Activity from '../components/Activity';
 import MoreActivity from '../components/MoreActivity';
 import VideoContent from './../components/VideoContent';
-import Plus from './../components/Plus';
+
 import Galery from '../components/Galery';
 import Counter from '../components/Counter';
 import Partners from '../components/Partners';
