@@ -45,9 +45,8 @@ class Homepage extends Component {
         <div className="tiny:hidden xs:hidden sm:hidden md:hidden mdi:block h-auto max-w-xl text-black ml-8">
           <h1 className="xl:text-4xl lg:text-4xl md:text-2xl mdi:text-2xl font-bold text-black">LANCEMENT DES <span className="text-jfaccolor">JFAC 2020</span></h1>
           <p className="xl:text-xl lg:text-xl md:text-lg w-auto text-black xl:font-bold ">
-          Les objectifs des Journées Africaines de l’Ecologie et des Changements
-          Climatiques (JFAC) coïncident avec les missions assignées à mon
-          département ministériel et cadrent avec la vision{' '}
+          Les Journées africaines de l’écologie et des
+changements climatiques (JFAC 2019),qui sont à leur 2ème édition,sont le 1er forum d'échange et de marché Ouest africain pour les bonnes pratiques écologiques et technologies vertes.
           </p>
           <button className="mt-8 bg-grefacc p-4 text-white font-bold">En savoir Plus</button>
         </div>
