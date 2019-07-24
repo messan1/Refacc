@@ -1,11 +1,11 @@
 import React from 'react';
-import part1 from "../Images/participations/Copie-de-image.png"
-import part2 from "../Images/participations/images.png"
-import part3 from "../Images/Partners/part3.jpeg"
-import part4 from "../Images/Partners/part4.jpeg"
+import part1 from "../images/participations/Copie-de-image.png"
+import part2 from "../images/participations/images.png"
+import part3 from "../images/Partners/part3.jpeg"
+import part4 from "../images/Partners/part4.jpeg"
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import place from '../Images/partPlace/placeholder.jpg'
+import place from '../images/partPlace/placeholder.jpg'
 
 
 const JfacParticipation = () =>{

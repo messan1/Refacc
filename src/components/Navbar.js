@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../Images/logorefacc.png';
+import logo from '../images/logorefacc.png';
 import '../css/Navbar.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPhone} from '@fortawesome/free-solid-svg-icons';

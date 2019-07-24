@@ -4,22 +4,22 @@ import {faCommentAlt} from '@fortawesome/free-solid-svg-icons';
 import JfacTalker from './JfacTalker';
 import PartnersLogo from './PartnersLogo';
 
-import partlogo from "../Images/l.png"
-import partlog2 from "../Images/h.jpg"
+import partlogo from "../images/l.png"
+import partlog2 from "../images/h.jpg"
 //images 
-import part1 from "../Images/Partners/part1.png"
-import part2 from "../Images/Partners/part2.png"
-import part3 from "../Images/Partners/part3.jpeg"
-import part4 from "../Images/Partners/part4.jpeg"
-import part5 from "../Images/Partners/part5.jpg"
-import part6 from "../Images/Partners/part8.png"
-import part7 from "../Images/Partners/part9.png"
-import part8 from "../Images/Partners/1310dc9e2dd35f0c.png"
-import part9 from "../Images/Partners/af502c9a96446632.jpg"
-import part10 from "../Images/Partners/part10.png"
-import part11 from "../Images/Partners/part11.png"
-import part12 from "../Images/Partners/part13.png"
-import part13 from "../Images/Partners/part3.gif"
+import part1 from "../images/Partners/part1.png"
+import part2 from "../images/Partners/part2.png"
+import part3 from "../images/Partners/part3.jpeg"
+import part4 from "../images/Partners/part4.jpeg"
+import part5 from "../images/Partners/part5.jpg"
+import part6 from "../images/Partners/part8.png"
+import part7 from "../images/Partners/part9.png"
+import part8 from "../images/Partners/1310dc9e2dd35f0c.png"
+import part9 from "../images/Partners/af502c9a96446632.jpg"
+import part10 from "../images/Partners/part10.png"
+import part11 from "../images/Partners/part11.png"
+import part12 from "../images/Partners/part13.png"
+import part13 from "../images/Partners/part3.gif"
 
 
 

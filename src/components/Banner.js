@@ -1,5 +1,5 @@
 import React from 'react';
-import jfac from '../Images/lcmjfac20.jpg';
+import jfac from '../images/lcmjfac20.jpg';
 
 const Banner = () => {
   return (
