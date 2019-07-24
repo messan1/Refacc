@@ -1,13 +1,5 @@
 import React from 'react';
 import "../css/galery.css"
-import img1 from "../Images/galeries/1.jpg"
-import img2 from "../Images/galeries/2.jpg"
-import img3 from "../Images/galeries/3.jpg"
-import img4 from "../Images/galeries/4.jpg"
-import img5 from "../Images/galeries/5.jpg"
-import img6 from "../Images/galeries/6.jpg"
-import {LazyLoadImage} from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 const Galery = () => {
@@ -19,18 +11,6 @@ const Galery = () => {
     </div>
     <div className="flex flex-wrap justify-center mt-8 inf-div-galery">
      
-        <LazyLoadImage effect="blur" className=" m-2 w-auto h-56 object-cover" src={img1} alt="" />
-     
-      
-        <LazyLoadImage effect="blur" className=" m-2 w-auto  h-56 object-cover" src={img2} alt="" />
-      
-        <LazyLoadImage effect="blur" className=" m-2 w-auto h-56 object-cover" src={img3} alt="" />
-      
-        <LazyLoadImage effect="blur" className=" m-2 w-auto h-56 object-cover" src={img4} alt="" />
-      
-        <LazyLoadImage effect="blur" className=" m-2 w-auto h-56 object-cover" src={img5} alt="" />
-      
-        <LazyLoadImage effect="blur" className=" m-2 w-auto h-56 object-cover" src={img6} alt="" />
     </div>
   </div>
     </div>

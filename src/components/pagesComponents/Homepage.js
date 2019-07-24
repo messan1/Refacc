@@ -29,9 +29,7 @@ const BouncyDiv = styled.div`
 const BouncyDiv1 = styled.div`
   animation: 3s ${fadeInAnimation};
 `;
-const BouncyDiv2 = styled.div`
-  animation: 2s ${fadeInAnimation};
-`;
+
 
 class Homepage extends Component {
   constructor (props) {
