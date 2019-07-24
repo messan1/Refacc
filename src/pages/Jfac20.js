@@ -63,19 +63,19 @@ class Jfac20 extends Component {
               <div className="shadow-lg h-auto max-w-lg p-8 mdi:absolute mdi:mb-8  left-0 bg-white">
                 <h1 className="font-bold text-3xl mb-2">Pourquoi les JFAC</h1>
                 <p className="text-justify m-4">
-                  Les Journées africaines de l’écologie et des
-                  changements climatiques (JFAC 2019)
-                  deviennent un baromètre des actions
-                  climatiques et écologiques de la Côte d’Ivoire.
-                  «Les JFAC peuvent et doivent, en effet constituerun rendez-vous périodique (peut-être
-                  annuel) d’évaluation de nos progrès en matière
-                  de lutte contre les changements climatiques et
-                  d’atteinte des Objectifs du Développement
-                  Durable (ODD). Il est important de se trouver, de
-                  l’enjeu climatique nouimport { Link } from 'react-router-dom';
-s y oblige», c’est ce qu’a
-                  déclaré le ministre ivoirien de l’Environnement
-                  et du Développement durable, Séka Séka{' '}
+                Les Journées africaines de l’écologie et des
+changements climatiques (JFAC 2019)
+deviennent un baromètre des actions
+climatiques et écologiques de la Côte d’Ivoire.
+«Les JFAC peuvent et doivent, en effet, constituer un rendez-vous périodique (peut-être
+annuel) d’évaluation de nos progrès en matière
+de lutte contre les changements climatiques et
+d’atteinte des Objectifs du Développement
+Durable (ODD). Il est important de se trouver, de
+dialoguer et d’apprendre l’un de l’autre car
+l’enjeu climatique nous y oblige», c’est ce qu’a
+déclaré le ministre ivoirien de l’Environnement
+et du Développement durable, Séka Séka 
                 </p>
               </div>
               <div className="m-2 order-first h-auto max-w-4xl sm:max-w- mdi:max-w-sm ">
