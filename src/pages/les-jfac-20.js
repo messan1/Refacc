@@ -5,7 +5,7 @@ import Jfac2020 from '../components/pagesComponents/les-jfac-20';
 
 const Jfac20 = () => (
   <Layout>
-    <SEO title="Jfac - 2020" />
+    <SEO title="Refac - En route pour les JFAC 2020" />
     <Jfac2020/>
   </Layout>
 )

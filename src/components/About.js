@@ -27,7 +27,7 @@ const About = () => {
         </p>
         <div className="mt-8 border-4 border-grefacc flex justify-around items-center">
           <span className="xl:text-7xl font-bold md:text-6xl text-grefacc m-4 tiny:text-5xl lg:text-6xl md:text-4xl lg:m-0">
-            2
+            9
           </span>
           <p className="xl:text-3xl md:text-2xl text-gray-500 sm:text-md tiny:text-sm lg:text-xl ">
             Années d'expériences <br />

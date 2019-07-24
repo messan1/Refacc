@@ -5,7 +5,7 @@ import Homepage from '../components/pagesComponents/Homepage';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Refacc - Lancement des JFAC 2020" />
     <Homepage/>
   </Layout>
 )

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Helmet} from 'react-helmet';
+
 import '../../css/Jfac20.css';
 import JfacParticipation from '../JfacParticipation';
 import SpeakerBox from '../SpeakerBox';
@@ -21,9 +21,6 @@ class Jfac20 extends Component {
   render () {
     return (
       <div>
-        <Helmet>
-          <title>Refac - En route pour les JFAC 2020</title>
-        </Helmet>
         <header className="inf-j20 flex justify-center flex-row pt-24 pb-24 items-center flex-wrap p-8 relative">
           <div className="absolute bg-black opacity-50 h-full w-full" />
           <div className="w-full flex flex-wrap justify-center items-center content-center relative z-50">
@@ -59,14 +56,7 @@ class Jfac20 extends Component {
               <div className="shadow-lg h-auto max-w-lg p-8 mdi:absolute mdi:mb-8  left-0 bg-white">
                 <h1 className="font-bold text-3xl mb-2">Pourquoi les JFAC</h1>
                 <p className="text-justify m-4">
-                  Les Journées africaines de l’écologie et des
-                  changements climatiques (JFAC 2019)
-                  deviennent un baromètre des actions
-                  climatiques et écologiques de la Côte d’Ivoire.
-                  «Les JFAC peuvent et doivent, en effet constituerun rendez-vous périodique (peut-être
-                  annuel) d’évaluation de nos progrès en matière
-                  de lutte contre les changements climatiques et
-                  d’atteinte des Objectifs du Développement
+                Les Journées africaines de l’écologie et des changements climatiques (JFAC 2019) deviennent un baromètre des actions climatiques et écologiques de la Côte d’Ivoire. «Les JFAC peuvent et doivent, en effet, constituer un rendez-vous périodique (peut-être annuel) d’évaluation de nos progrès en matière de lutte contre les changements climatiques et d’atteinte des Objectifs du Développement Durable (ODD). Il est important de se trouver, de dialoguer et d’apprendre l’un de l’autre car l’enjeu climatique nous y oblige», c’est ce qu’a déclaré le ministre ivoirien de l’Environnement et du Développement durable, Séka Séka.
           
                 </p>
               </div>

@@ -12,8 +12,8 @@ import '../../css/Homepage.css';
 import imgconf from '../../Images/Activities/act1.png';
 import imgconf2 from '../../Images/Activities/confJfac.jpg';
 import fomation from '../../Images/formation.jpg';
-//Seo
-import {Helmet} from 'react-helmet';
+
+
 //Animation
 import styled, {keyframes} from 'styled-components';
 import {fadeInLeft} from 'react-animations';
@@ -41,9 +41,6 @@ class Homepage extends Component {
   render () {
     return (
       <div className="h-auto">
-        <Helmet>
-          <title>Refacc - Lancement des JFAC 2020</title>
-        </Helmet>
         <div className="w-full bg-color flex justify-around items-center mt-16 mb-16 mr-4 ">
         <div className="tiny:hidden xs:hidden sm:hidden md:hidden mdi:block h-auto max-w-xl text-black ml-8">
           <h1 className="xl:text-4xl lg:text-4xl md:text-2xl mdi:text-2xl font-bold text-black">LANCEMENT DES <span className="text-jfaccolor">JFAC 2020</span></h1>
