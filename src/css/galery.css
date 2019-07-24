@@ -1,0 +1,29 @@
+.inf-galeryback {
+  background-image: url("../Images/refaccback.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: ease cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.inf-div-galery img {
+  transition: 1s;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-gap: 5px;
+  grid-auto-rows: minmax(180px, auto);
+  grid-auto-flow: dense;
+
+}
+.span-2 {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+
+.span-3 {
+  grid-column-end: span 3;
+  grid-row-end: span 4;
+}
