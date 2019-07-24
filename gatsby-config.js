@@ -7,6 +7,17 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: "gatsby-source-graphql",
+      options: {
+    
+        typeName: "DataRefac",
+      
+        fieldName: "Refacc",
+      
+        url: "https://api-euwest3.graphcms.com/v1/cjyd6vwtk1z5201d7vd764uv3/master",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

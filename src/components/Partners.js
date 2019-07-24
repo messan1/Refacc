@@ -1,45 +1,35 @@
-import React,{Component} from 'react';
+import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCommentAlt} from '@fortawesome/free-solid-svg-icons';
 import JfacTalker from './JfacTalker';
-import PartnersLogo from './PartnersLogo';
 
 import partlogo from '../images/l.png';
 import partlog2 from '../images/h.jpg';
-//images
-import part1 from '../images/Partners/part1.png';
-import part2 from '../images/Partners/part2.png';
-import part3 from '../images/Partners/part3.jpeg';
-import part4 from '../images/Partners/part4.jpeg';
-import part5 from '../images/Partners/part5.jpg';
-import part6 from '../images/Partners/part8.png';
-import part7 from '../images/Partners/part9.png';
-import part8 from '../images/Partners/1310dc9e2dd35f0c.png';
-import part9 from '../images/Partners/af502c9a96446632.jpg';
-import part10 from '../images/Partners/part10.png';
-import part11 from '../images/Partners/part11.png';
-import part12 from '../images/Partners/part13.png';
-import part13 from '../images/Partners/part3.gif';
 
-//css
+
+//Query
+import {StaticQuery, graphql} from 'gatsby';
 
 //slider
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import PartnersLogo from './PartnersLogo';
 
-class Partners extends Component {
-  
-  responsive = {
-    0: {items: 2},
-    355: {items: 3},
-    552: {items: 3},
-    956: {items: 5},
-    1024: {items: 9},
-  };
+const Partners = () => (
+  <StaticQuery
+    query={graphql`
+            query {Refacc{
+              partnerses{
+                img{
+                  id
+                  url
+                  }
+                }
+              }
+            }
+          `}
 
-
-  render () {
-    return (
+    render={data => (
       <div className="w-full  pb-8 pt-8">
         <div className="flex items-center mr-2 justify-center">
           <FontAwesomeIcon icon={faCommentAlt} color="#a0aec0" size="4x" />
@@ -66,8 +56,13 @@ class Partners extends Component {
         <div className="bg-grefacc h-1 w-16 m-auto mb-8" />
         <div className="flex items-center flex-wrap justify-center">
           <AliceCarousel
-            
-            responsive={this.responsive}
+            responsive={{
+              0: {items: 2},
+              355: {items: 3},
+              552: {items: 3},
+              956: {items: 5},
+              1024: {items: 9},
+            }}
             autoPlayInterval={1000}
             autoPlayDirection="rtl"
             autoPlay={true}
@@ -76,28 +71,18 @@ class Partners extends Component {
             playButtonEnabled={false}
             disableAutoPlayOnAction={true}
             dotsDisabled={true}
-          buttonsDisabled={true}
-          
+            buttonsDisabled={true}
           >
-            <PartnersLogo img={part1} />
-            <PartnersLogo img={part2} />
-            <PartnersLogo img={part3} />
-            <PartnersLogo img={part4} />
-            <PartnersLogo img={part5} />
-            <PartnersLogo img={part6} />
-            <PartnersLogo img={part7} />
-            <PartnersLogo img={part8} />
-            <PartnersLogo img={part9} />
-            <PartnersLogo img={part10} />
-            <PartnersLogo img={part11} />
-            <PartnersLogo img={part12} />
-            <PartnersLogo img={part13} />
+          
+          {data.Refacc.partnerses.map(function(item){
+            return <PartnersLogo img={item.img.url} alt="" />
+          })}
           </AliceCarousel>
 
         </div>
       </div>
-    );
-  }
-}
+    )}
+  />
+);
 
 export default Partners;
