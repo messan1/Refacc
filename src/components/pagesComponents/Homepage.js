@@ -9,9 +9,9 @@ import Galery from '../Galery';
 import Counter from '../Counter';
 import Partners from '../Partners';
 import '../../css/Homepage.css';
-import imgconf from '../../Images/Activities/act1.png';
-import imgconf2 from '../../Images/Activities/confJfac.jpg';
-import fomation from '../../Images/formation.jpg';
+import imgconf from '../../images/Activities/act1.png';
+import imgconf2 from '../../images/Activities/confJfac.jpg';
+import fomation from '../../images/formation.jpg';
 
 
 //Animation

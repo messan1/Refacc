@@ -146,7 +146,7 @@ svg {
 }
 .slide:nth-child(1) .slide__bg {
   left: 0;
-  background-image: url("../Images/cp.jpg");
+  background-image: url("../images/cp.jpg");
   background-position:center;
   background-size: cover
 }
@@ -163,7 +163,7 @@ svg {
 }
 .slide:nth-child(2) .slide__bg {
   left: -50%;
-  background-image: url("../Images/lcmjfac20.jpg");
+  background-image: url("../images/lcmjfac20.jpg");
   background-position: 700px;
   background-size: 1000px auto;
   background-repeat: no-repeat;

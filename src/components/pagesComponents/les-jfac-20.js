@@ -8,14 +8,14 @@ import Form from '../Form';
 import {Link} from 'gatsby';
 
 //speakers
-import speak2 from '../../Images/speakers/1.png';
-import speak3 from '../../Images/speakers/2.png';
-import speak1 from '../../Images/speakers/jp.png';
-import lc from '../../Images/speakers/lc.png';
+import speak2 from '../../images/speakers/1.png';
+import speak3 from '../../images/speakers/2.png';
+import speak1 from '../../images/speakers/jp.png';
+import lc from '../../images/speakers/lc.png';
 
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import place from '../../Images/partPlace/placeholder.jpg';
+import place from '../../images/partPlace/placeholder.jpg';
 
 class Jfac20 extends Component {
   render () {
