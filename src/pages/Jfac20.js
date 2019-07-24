@@ -33,7 +33,7 @@ class Jfac20 extends Component {
           <div className="w-full flex flex-wrap justify-center items-center content-center relative z-50">
             <div className=" mb-8">
               <p className="text-white text-lg max-w-sm">
-                Du 16 au 22 Mars 2020 à  Toumodi et Yamoussoukro
+                Du 16 au 21 Mars 2020 à  Toumodi et Yamoussoukro
               </p>
               <h1 className="text-4xl lg:text-4xl xl:text-7xl md:text-3xl sm:text-3xl mdi:text-2xl text-white">
                 LANCEMENT DES <br />

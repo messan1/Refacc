@@ -66,18 +66,27 @@ changements climatiques (JFAC 2019),qui sont à leur 2ème édition,sont le 1er 
               <Activity
                 img={imgconf2}
                 title="Conférences"
+                content="Deux conférences de haut niveau devront traiter les deux dimensions du thème des Journées. Ces
+                deux conférences seront organisées sous forme de panel, avec la possibilité aux participants de poser
+                des questions"
                />
             </BouncyDiv>
             <BouncyDiv1>
               <Activity
                 img={fomation}
-                title="Formations"
+                title="Ateliers Thématiques"
+                content="Les ateliers sont de véritables rencontres de partage d'idées, d'expériences et d'outils professionnels
+                en matière d'écologie et de changement climatique. Vu l'engouement et la situation climatique
+                préoccupante."
               />
             </BouncyDiv1>
             <BouncyDiv>
               <Activity
                 img={imgconf}
-                title="Stands d'expositions"
+                title="Expositions"
+                content="Les innovations technologiques en matière d'écologie sont encouragées à venir présenter
+                leurs produits au grand public. Avec une représentation des secteurs :
+               Partenaires internationaux,Entreprises, produits bios, élevage bio,Innovations, etc"
                />
             </BouncyDiv>
                    <MoreActivity/>
