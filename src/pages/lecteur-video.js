@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Layout from '../components/layout';
 import ReactPlayer from 'react-player';
 import SmallVideo from '../components/SmallVideo';
-import {navigate} from 'gatsby';
 
 class lecteur_video extends Component {
   constructor (props) {
@@ -12,23 +11,15 @@ class lecteur_video extends Component {
   render () {
     console.log(this.props.location);
     const info = this.props.location.state;
-    if (info == null) {
-      navigate("/videotheque")
-    }
-    else if (info.link == null){
-      navigate("/videotheque")
-    }
-    else if (info.title == null){
-      navigate("/videotheque")
-    }
+
     return (
       <Layout>
         <div className="flex justify-center items-center  relative playerback">
           <div className="filtervideo2" />
           <div className="z-50 flex justify-center items-center flex-col videobox">
-            <ReactPlayer url={info.link} playing width={'100%'} height={700} />
+            <ReactPlayer  playing width={'100%'} height={700} />
             <h1 className="m-2 font-bold text-xl xl:text-4xl xl:text-4xl text-center text-white">
-              {info.title}
+              
             </h1>
           </div>
 
