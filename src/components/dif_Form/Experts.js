@@ -1,30 +1,50 @@
-import React from 'react';
-import {withFormik} from 'formik';
+import React, {useState, useEffect} from 'react';
+import {withFormik, Form, Field} from 'formik';
 import * as yup from 'yup';
+import axios from 'axios';
 
-const Formik = ({values, handleChange,errors}) => {
+function isEmpty (obj) {
+  for (var key in obj) {
+    if (obj.hasOwnProperty (key)) return false;
+  }
+  return true;
+}
+
+const Formik = ({touched, errors, isSubmitting}) => {
+  const [send, setSend] = useState (false);
+  useEffect (() =>{
+    if (isEmpty (errors) && isSubmitting ) {
+      setSend (true)
+    }
+  });
   return (
     <div className="md:ml-0 lg:ml-4 max-w-md">
-      <form  name="Experts"  action="//formspree.io/infinity.soft@aol.com"
-      method="POST">
+      <Form>
         <div className="">
-          <p className="text-red-700 mb-4">{errors.name}</p>
-          <label className="text-xl text-black mb-2">Nom & prénoms</label>
-          <input
+          {send &&
+            <p className="text-green-700 text-lg mb-4">
+              Merci de participer au JFAC 2020.
+              <br />
+              Nous vous invitons à consultez votre adresse email
+            </p>}
+          <p className="text-red-700 text-lg mb-4">{errors.sendingExpert}</p>
+          {touched.nom &&
+            errors.nom &&
+            <p className="text-red-700 mb-4">{errors.nom}</p>}
+
+          <Field
             type="text"
-            name="name"
+            name="nom"
             placeholder="Votre nom et prénoms"
             className="w-full  h-16 border border-gray-300 mb-6 "
-            value={values.name}
-            onChange={handleChange}
           />
         </div>
         <div className="">
-          <label className="text-xl text-black mb-8">Atélier</label>
-          <select
+
+          <Field
             className="w-full h-16 mb-6 border-2"
-            name="Atelier"
-            onChange={handleChange}
+            name="atelier"
+            component="select"
           >
             <option value="Atelier 1">
               Atelier 1 : Rôle des collectivités territoriales et du secteur privé dans la production décentralisée d’énergies renouvelables : solaire, biomasse, petite hydroélectricité.
@@ -33,7 +53,7 @@ const Formik = ({values, handleChange,errors}) => {
               Atelier 2 : Villes durables - défis urbains dans les villes africaines et Accès aux financements climatiques
             </option>
             <option value="Atelier 3">
-              Atelier 3 : Rôle de la recherche et de la formation dans la transition vers l'économie verte
+              Atelier 3 : Rôle de la recherche et de la Formation dans la transition vers l'économie verte
             </option>
             <option value="Atelier 4">
               Atelier 4 : Bonnes pratiques agroécologiques : partage d’expériences et leçons apprises
@@ -44,50 +64,53 @@ const Formik = ({values, handleChange,errors}) => {
             <option value="Atelier 6">
               Atelier 6 : Environnement, Changement Climatique et Santé
             </option>
-          </select>
+          </Field>
         </div>
         <div className="">
-          <p className="text-red-700 mb-4">{errors.email}</p>
-          <label className="text-xl text-black mb-2">Email</label>
-          <input
+          {touched.email &&
+            errors.email &&
+            <p className="text-red-700 mb-4">{errors.email}</p>}
+
+          <Field
             type="text"
             name="email"
             placeholder="Votre Email"
             className="w-full  h-16 border border-gray-300 mb-6 "
-            value={values.email}
-            onChange={handleChange}
           />
         </div>
         <div className="">
-          <p className="text-red-700 mb-4">{errors.contact}</p>
-          <label className="text-xl text-black mb-8">Contact</label>
-          <input
+          {touched.contact &&
+            errors.contact &&
+            <p className="text-red-700 mb-4">{errors.contact}</p>}
+
+          <Field
             type="text"
             name="contact"
             placeholder="Votre Contact "
             className="w-full border border-gray-300  mb-6 h-16"
-            value={values.contact}
-            onChange={handleChange}
           />
         </div>
 
-        <input
-          type="submit"
-          value="Envoyer"
-          className="bg-grefacc p-4 text-white font-bold"
-        />
-      </form>
+        <button
+        disabled={isSubmitting}
+        className="bg-grefacc p-4 text-white font-bold"
+        type="submit"
+      >
+        {isSubmitting && 'Envoye en cours'}
+        {!isSubmitting && 'Envoyer'}
+      </button>{' '}
+      </Form>
     </div>
   );
 };
 
 const Experts = withFormik ({
-  mapPropsToValues({name, email, contact, Atelier}) {
+  mapPropsToValues({nom, email, contact, atelier}) {
     return {
-      name: name || '',
+      nom: nom || '',
       email: email || '',
       contact: contact || '',
-      Atelier: Atelier ||
+      atelier: atelier ||
         'Atelier 1' ||
         'Atelier 2' ||
         'Atelier 3' ||
@@ -101,11 +124,24 @@ const Experts = withFormik ({
       .string ()
       .email ('Entrez une adresse valide')
       .required ("L'email est obligatoire"),
-    name: yup.string ().required ('Votre nom est obligatoire'),
+    nom: yup.string ().required ('Votre nom est obligatoire'),
     contact: yup.string (),
   }),
-  handleSubmit (values) {
-    console.log (values);
+  handleSubmit (values, {resetForm, setErrors, setSubmitting}) {
+    axios
+      .post ('http://localhost:8000/api/jfac20/experts', values, {
+        headers: {Accept: 'application/json'},
+      })
+      .then (function (res) {
+        setSubmitting (true);
+        resetForm ();
+      })
+      .catch (function (errors) {
+        setErrors ({
+          sendingExpert: 'Vous etes déjà inscrit avec cet email',
+        });
+        setSubmitting (false);
+      });
   },
 }) (Formik);
 

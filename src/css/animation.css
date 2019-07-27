@@ -25,3 +25,9 @@
 .transition{
   transition: 4s
 }
+.react-images__view,.react-images__view--isModal {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center
+}
