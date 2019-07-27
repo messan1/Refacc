@@ -43,7 +43,7 @@ class Homepage extends Component {
             </h1>
             <p className="xl:text-xl lg:text-xl md:text-lg w-auto text-black xl:font-bold ">
               Les Journées africaines de l’écologie et des
-              changements climatiques (JFAC 2019),qui sont à leur 2ème édition,sont le 1er forum d'échange et de marché Ouest africain pour les bonnes pratiques écologiques et technologies vertes.
+              changements climatiques (JFAC 2020),qui sont à leur 2ème édition,sont le 1er forum d'échange et de marché Ouest africain pour les bonnes pratiques écologiques et technologies vertes.
             </p>
             <button className="mt-8 bg-grefacc p-4 text-white font-bold">
               En savoir Plus

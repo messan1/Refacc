@@ -156,7 +156,7 @@ const Participants = withFormik ({
   }),
   handleSubmit (values, {resetForm, setErrors, setSubmitting}) {
     axios
-      .post ('http://localhost:8000/api/jfac20/participants', values, {
+      .post ('https://refaccapi.herokuapp.com/api/jfac20/participants', values, {
         headers: {Accept: 'application/json'},
       })
       .then (function (res) {

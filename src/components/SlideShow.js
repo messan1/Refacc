@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../images/slide/slide1.jpeg';
+import img from '../images/slide/slide1.jpg';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 

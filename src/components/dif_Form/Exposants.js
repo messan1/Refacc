@@ -109,7 +109,7 @@ const Exposant = withFormik ({
   }),
   handleSubmit (values, {resetForm, setErrors, setSubmitting}) {
     axios
-      .post ('http://localhost:8000/api/jfac20/exposants', values, {
+      .post ('https://refaccapi.herokuapp.com/api/jfac20/exposants', values, {
         headers: {Accept: 'application/json'},
       })
       .then (function (res) {
