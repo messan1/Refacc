@@ -7,6 +7,24 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-144706102-1",
+
+        head: false,
+
+        anonymize: true,
+
+        respectDNT: true,
+
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "example.com",
+      },
+    },
+    {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         color: `#3F9F42`,
