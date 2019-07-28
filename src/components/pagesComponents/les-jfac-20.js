@@ -54,7 +54,7 @@ class Jfac20 extends Component {
           <section>
             <div className="flex xl:h-64 mdi:h-64 lg:h-64 md:lg:h-64 mb-8 justify-center flex-wrap items-center mdi:flex-col mdi:relative max-w-4xl m-auto">
               <div className="shadow-lg h-auto max-w-lg p-8 mdi:absolute mdi:mb-8  left-0 bg-white">
-                <h1 className="font-bold text-3xl mb-2">Pourquoi les JFAC</h1>
+                <h3 className="font-bold text-3xl mb-2">Pourquoi les JFAC</h3>
                 <p className="text-justify m-4">
                 Les Journées africaines de l’écologie et des changements climatiques (JFAC 2019) deviennent un baromètre des actions climatiques et écologiques de la Côte d’Ivoire. «Les JFAC peuvent et doivent, en effet, constituer un rendez-vous périodique (peut-être annuel) d’évaluation de nos progrès en matière de lutte contre les changements climatiques et d’atteinte des Objectifs du Développement Durable (ODD). Il est important de se trouver, de dialoguer et d’apprendre l’un de l’autre car l’enjeu climatique nous y oblige», c’est ce qu’a déclaré le ministre ivoirien de l’Environnement et du Développement durable, Séka Séka.
           
@@ -72,9 +72,9 @@ class Jfac20 extends Component {
               </div>
 
             </div>
-            <h1 className="text-center text-4xl font-bold">
+            <p className="text-center text-4xl font-bold">
               Pour les JFAC 2019
-            </h1>
+            </p>
             <p className="text-center text-grefacc mt-2 font-bold text-xl">
               Les avis
             </p>
@@ -137,9 +137,9 @@ class Jfac20 extends Component {
               />
 
             </div>
-            <h1 className="text-center font-bold text-4xl mb-8">
+            <p className="text-center font-bold text-4xl mb-8">
               EDITION <span className="text-jfaccolor">JFAC 2020</span>
-            </h1>
+            </p>
             <div className="w-screen bg-jfaccolor p-8 flex justify-center flex-wrap items-center ">
               <div className=" xs:w-full sm:w-full p-4 md:w-1/3 mr-8">
                 <p className="text-white">PRET?</p>
