@@ -63,7 +63,7 @@ function App () {
         <Link
           className="text-lg lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-grefacc text-black font-bold"
           exact
-          to="/"
+          to="/videotheque"
           activeClassName="active"
         >
           Vidéos

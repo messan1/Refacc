@@ -7,6 +7,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#3F9F42`,
+        showSpinner: false,
+      },
+    },
+    {
       resolve: "gatsby-source-graphql",
       options: {
     

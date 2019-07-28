@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import About from '../About';
 import Activity from '../Activity';
 import MoreActivity from '../MoreActivity';
-import VideoContent from '../VideoContent';
+import SmallVideo from "../SmallVideo";
 
 import Galery from '../Galery';
 import Counter from '../Counter';
@@ -85,18 +85,28 @@ class Homepage extends Component {
                Partenaires internationaux,Entreprises, produits bios, élevage bio,Innovations, etc"
               />
             </BouncyDiv>
-            <MoreActivity />
+            
           </div>
 
-          <h6 className="text-center font-bold text-2xl mt-8">
+          <h6 className="text-center font-bold text-2xl mt-8 ">
             ACTU VIDEO REFACC
           </h6>
-          <div className="bg-grefacc h-1 w-16 m-auto" />
-          <div className="flex  items-center flex-wrap justify-around">
+          <div className="bg-grefacc h-1 w-16 m-auto mb-4" />
+          <div className="flex  items-center flex-wrap justify-center">
 
-            <VideoContent url="https://www.youtube.com/watch?v=_RpGsp9GTCs&t=1s" />
-            <VideoContent url="https://www.youtube.com/watch?v=-f9FuE5epnY" />
-
+          <SmallVideo
+          link="https://www.youtube.com/watch?v=_RpGsp9GTCs"
+          title="Mot du ministre de l'environnement et du développement durable lors des JFAC 2019"
+          img="https://media.graphcms.com/FGu9UeQeRHiLC4VlnpB3"
+          tag="JFAC 2019"
+        />
+        <SmallVideo
+          link="https://www.youtube.com/embed/WX7f919zODg"
+          title="DEVELOPPEMENT DURABLE | Comment réussir la transition écologique ?"
+          img="https://img.youtube.com/vi/WX7f919zODg/hqdefault.jpg"
+          tag="Ecologie"
+        />
+        <MoreActivity />
           </div>
           <h6 className="text-center font-bold text-2xl mt-8 ">
             LA GALERIE DES JFAC

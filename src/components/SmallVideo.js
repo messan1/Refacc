@@ -3,7 +3,7 @@ import '../css/video.css';
 import {Link} from 'gatsby';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPlayCircle} from '@fortawesome/free-solid-svg-icons';
-const SmallVideo = ({link,title,img}) => {
+const SmallVideo = ({link,title,img,tag}) => {
   return (
     <Link
       className="relative bg-black mb-24 m-4"
@@ -25,10 +25,10 @@ const SmallVideo = ({link,title,img}) => {
         <FontAwesomeIcon icon={faPlayCircle} color="white" size="2x" className="z-50" />
       </div>
       <div className="contentvideo">
-        <span>Gamming</span>
+        <span>{tag}</span>
         <div className="mt-4" />
       </div>
-      <p className="font-bold text-lg ">Slash Your 40-time and Get Faster</p>
+      <p className="font-bold text-lg ">{title}</p>
     </Link>
   );
 };
