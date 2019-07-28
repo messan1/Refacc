@@ -127,7 +127,7 @@ const Formik = ({touched, errors, isSubmitting}) => {
               {' '}<FontAwesomeIcon icon={faUser} color="#3F9F42" size="2x" />
               <p className="font-bold text-xl ml-4">Nous suivre</p>
             </div>
-            <p>Sur Facebook</p>
+            <a href="https://web.facebook.com/refaccclimat/" target="_blank">Sur Facebook</a>
           </div>
 
         </div>
@@ -154,7 +154,7 @@ const Footer = withFormik ({
   }),
   handleSubmit (values, {resetForm, setErrors, setSubmitting}) {
     axios
-      .post ('http://localhost:3000/api/jfac20/contact', values, {
+      .post ('https://refaccapi.herokuapp.com/api/jfac20/contact', values, {
         headers: {Accept: 'application/json'},
       })
       .then (function (res) {
