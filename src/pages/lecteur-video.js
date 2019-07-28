@@ -4,6 +4,7 @@ import ReactPlayer from 'react-player';
 import SmallVideo from '../components/SmallVideo';
 import Videotheque from './videotheque';
 import MediaQuery from 'react-responsive';
+import SEO from '../components/seo';
 
 class lecteur_video extends Component {
   constructor (props) {
@@ -17,6 +18,10 @@ class lecteur_video extends Component {
     }
     return (
       <Layout>
+      <SEO
+        title="Le Lecteur de vidéo du REFACC"
+        description="Profitez des dernières vidéos du REFACC"
+      />
         <div className="flex justify-center items-center  relative playerback">
           <div className="filtervideo2" />
 
