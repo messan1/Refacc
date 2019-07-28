@@ -2,7 +2,9 @@ module.exports = {
   siteMetadata: {
     title:"",
     description: `Le réseau des Experts africains pour les Forêt l'agriculture,l'énergie et les changements climatiques, en abrégé REFACC est une association non lucrative créée par un consortion d'expert africains en vue de renforcerle dialogue et la coopération avec les acteurs des pays africains. Ce réseau apolitique se propose d'apporter une dynamique à la lutte contre les changements climatiques dans les collectivités et aider les communautés rurales les plus vulnérables.`,
-    author: `@MessanChristian`,
+    author: `Messan Christian`,
+    siteUrl: `https://refacc.com`,
+    keywords:`['écologie','les JFAC','environnement','réchauffement climatique',''lutte contre le réchauffement climatique']`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
