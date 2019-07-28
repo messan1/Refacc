@@ -78,11 +78,11 @@ const MyFormik = ({touched, errors, isSubmitting}) => {
           <div>
             <ul className=" listing">
               <li> <Link to="/">Acceuil</Link></li> <br />
-              <li>JFAC 20</li>
+              <li><Link to="/les-jfac-20">JFAC 20</Link></li>
               <li>Refacc</li>
               <li>Zoom sur</li>
-              <li>Galerie</li>
-              <li>Vidéothèque</li>
+              <li><Link to="/videotheque">Vidéothèque</Link></li>
+              <li><Link to="/la-galerie-des-jfac">Galerie</Link></li>
 
             </ul>
           </div>
