@@ -87,51 +87,47 @@ const Formik = ({touched, errors, isSubmitting}) => {
           </div>
         </div>
       </div>
-      <div className="flex justify-around mt-8 flex-wrap">
-        <div className="mt-4">
-          <div className="flex flex-col w-full">
-            <div className="flex">
-              {' '}
-              <FontAwesomeIcon icon={faAddressBook} color="#3F9F42" size="2x" />
-              <p className="font-bold text-xl ml-4">Adresse</p>
-            </div>
-            <p>503 BP514 Abidjan LWP503</p>
-          </div>
+      <div className="flex justify-around items-center mt-8 flex-wrap">
 
+        <div className="flex flex-col w-full mt-4">
+          <div className="flex">
+            {' '}
+            <FontAwesomeIcon icon={faAddressBook} color="#3F9F42" size="2x" />
+            <p className="font-bold text-xl ml-4">Adresse</p>
+          </div>
+          <p>503 BP514 Abidjan LWP503</p>
         </div>
 
-        <div className="mt-4">
-          <div className="flex flex-col w-full">
-            <div className="flex">
-              {' '}<FontAwesomeIcon icon={faPhone} color="#3F9F42" size="2x" />
-              <p className="font-bold text-xl ml-4">Contact</p>
-            </div>
-            <p> Phone: +225 09536206</p>
-            <p>Fixe: 22460814</p>
-          </div>
-        </div>
-        <div className="mt-4">
-          <div className="flex flex-col w-full">
-            <div className="flex">
-              {' '}
-              <FontAwesomeIcon icon={faEnvelope} color="#3F9F42" size="2x" />
-              <p className="font-bold text-xl ml-4">Email</p>
-            </div>
-            <p>climatrefacc@gmail.com</p>
-          </div>
-
-        </div>
-        <div className="mt-4">
-          <div className="flex flex-col w-full">
-            <div className="flex">
-              {' '}<FontAwesomeIcon icon={faUser} color="#3F9F42" size="2x" />
-              <p className="font-bold text-xl ml-4">Nous suivre</p>
-            </div>
-            <a href="https://web.facebook.com/refaccclimat/" target="_blank">Sur Facebook</a>
-          </div>
-
-        </div>
       </div>
+
+      <div className="flex flex-col w-full mt-4">
+        <div className="flex">
+          {' '}<FontAwesomeIcon icon={faPhone} color="#3F9F42" size="2x" />
+          <p className="font-bold text-xl ml-4">Contact</p>
+        </div>
+        <p> Phone: +225 09536206</p>
+        <p>Fixe: 22460814</p>
+      </div>
+
+      <div className="flex flex-col w-full mt-4">
+        <div className="flex">
+          {' '}
+          <FontAwesomeIcon icon={faEnvelope} color="#3F9F42" size="2x" />
+          <p className="font-bold text-xl ml-4">Email</p>
+        </div>
+        <p>climatrefacc@gmail.com</p>
+      </div>
+
+      <div className="flex flex-col w-full mt-4">
+        <div className="flex">
+          {' '}<FontAwesomeIcon icon={faUser} color="#3F9F42" size="2x" />
+          <p className="font-bold text-xl ml-4">Nous suivre</p>
+        </div>
+        <a href="https://web.facebook.com/refaccclimat/" target="_blank">
+          Sur Facebook
+        </a>
+      </div>
+
     </footer>
   );
 };
