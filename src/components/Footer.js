@@ -89,7 +89,7 @@ const Formik = ({touched, errors, isSubmitting}) => {
       </div>
       <div className="flex justify-around items-center mt-8 flex-wrap">
 
-        <div className="flex flex-col w-full mt-4">
+        <div className="flex flex-col w-auto mt-4">
           <div className="flex">
             {' '}
             <FontAwesomeIcon icon={faAddressBook} color="#3F9F42" size="2x" />
@@ -98,9 +98,9 @@ const Formik = ({touched, errors, isSubmitting}) => {
           <p>503 BP514 Abidjan LWP503</p>
         </div>
 
-      </div>
+     
 
-      <div className="flex flex-col w-full mt-4">
+      <div className="flex flex-col w-auto mt-4">
         <div className="flex">
           {' '}<FontAwesomeIcon icon={faPhone} color="#3F9F42" size="2x" />
           <p className="font-bold text-xl ml-4">Contact</p>
@@ -109,7 +109,7 @@ const Formik = ({touched, errors, isSubmitting}) => {
         <p>Fixe: 22460814</p>
       </div>
 
-      <div className="flex flex-col w-full mt-4">
+      <div className="flex flex-col w-auto mt-4">
         <div className="flex">
           {' '}
           <FontAwesomeIcon icon={faEnvelope} color="#3F9F42" size="2x" />
@@ -118,7 +118,7 @@ const Formik = ({touched, errors, isSubmitting}) => {
         <p>climatrefacc@gmail.com</p>
       </div>
 
-      <div className="flex flex-col w-full mt-4">
+      <div className="flex flex-col w-auto mt-4">
         <div className="flex">
           {' '}<FontAwesomeIcon icon={faUser} color="#3F9F42" size="2x" />
           <p className="font-bold text-xl ml-4">Nous suivre</p>
@@ -127,7 +127,7 @@ const Formik = ({touched, errors, isSubmitting}) => {
           Sur Facebook
         </a>
       </div>
-
+      </div>
     </footer>
   );
 };
