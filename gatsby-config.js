@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         color: `#3F9F42`,
-        showSpinner: false,
+        showSpinner: true,
       },
     },
     {
