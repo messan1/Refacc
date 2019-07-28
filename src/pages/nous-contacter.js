@@ -51,7 +51,7 @@ const Formik = ({touched, errors, isSubmitting}) => {
             />
             <ContactBox
               icon={faPhone}
-              title="Email"
+              title="Nous contacter"
               content={['Phone: +225 09536206', 'Fixe: 22460814']}
             />
             <ContactBox
