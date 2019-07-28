@@ -19,7 +19,7 @@ function isEmpty (obj) {
   return true;
 }
 
-const MyFormik = ({touched, errors, isSubmitting}) => {
+const Formik = ({touched, errors, isSubmitting}) => {
   const [send, setSend] = useState (false);
   useEffect (() => {
     if (isEmpty (errors) && isSubmitting) {
@@ -57,21 +57,20 @@ const MyFormik = ({touched, errors, isSubmitting}) => {
           </div>
 
           <Field
-            cols="20"
             className="w-full inf_footer_place mt-4 mb-4"
-            rows="3"
             placeholder="Votre Message"
             name="message"
             component="textarea"
           />
           <button
-            className="inf_footer_btn rounded-lg"
             disabled={isSubmitting}
+            className="bg-grefacc inf_footer_btn rounded-lg p-4 text-white font-bold"
             type="submit"
           >
             {isSubmitting && 'Envoye en cours'}
             {!isSubmitting && 'Envoyer votre message'}
-          </button>
+          </button>{' '}
+
         </Form>
         <div className="inf_box bg-white mt-4 shadow-xl">
           <h6 className="font-bold text-lg p-2">Liens</h6>
@@ -151,11 +150,11 @@ const Footer = withFormik ({
       .email ('Entrez une adresse valide')
       .required ("L'email est obligatoire"),
     name: yup.string ().required ('Votre nom est obligatoire'),
-    message: yup.string ('Entrez votre message').required ("le message est obligatoire"),
+    message: yup.string ().required ('Entrez un message'),
   }),
   handleSubmit (values, {resetForm, setErrors, setSubmitting}) {
     axios
-      .post ('localhost:3000/api/jfac20/contact', values, {
+      .post ('http://localhost:3000/api/jfac20/contact', values, {
         headers: {Accept: 'application/json'},
       })
       .then (function (res) {
@@ -166,6 +165,6 @@ const Footer = withFormik ({
         setSubmitting (false);
       });
   },
-}) (MyFormik);
+}) (Formik);
 
 export default Footer;
