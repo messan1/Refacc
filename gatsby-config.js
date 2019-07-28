@@ -97,15 +97,7 @@ module.exports = {
         host: 'https://refacc.com',
         sitemap: 'https://refacc.com/sitemap.xml',
         output:"/robot.txt",
-        resolveEnv: () => process.env.GATSBY_ENV,
-        env: {
-          development: {
-            policy: [{ userAgent: '*', disallow: ['/'] }]
-          },
-          production: {
-            policy: [{ userAgent: '*', allow: '/' }]
-          }
-        }
+        policy: [{ userAgent: '*', allow: '/' }]
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
