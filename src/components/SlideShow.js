@@ -7,6 +7,7 @@ const SlideShow = () => {
   const images = [
     {
       original: img,
+      originalAlt:"Les JFAC 2020"
     },
   ]
 
