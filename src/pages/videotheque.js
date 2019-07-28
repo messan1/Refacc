@@ -2,13 +2,17 @@ import React, {Component} from 'react';
 import Layout from './../components/layout';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import SmallVideo from '../components/SmallVideo';
-
 import {Link} from 'gatsby';
+import SEO from '../components/seo';
 
 class videotheque extends Component {
   render () {
     return (
       <Layout>
+      <SEO
+        title="REFACC - La vidéothèque"
+        description="Parcourez les vidéo du REFACC"
+      />
         <div className="flex items-center justify-center mt-8">
           <p className="font-bold  lg:text-4xl xl:text-4xl text-xl md:text-3xl mdi:text-3xl">
             Nouvelles Vidéos

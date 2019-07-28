@@ -7,11 +7,12 @@ import {
 import ContactBox from '../components/ContactBox';
 
 //Seo
-import {Helmet} from 'react-helmet';
 import Layout from './../components/layout';
 import {withFormik, Form, Field} from 'formik';
 import * as yup from 'yup';
 import axios from 'axios';
+
+import SEO from "../components/seo"
 
 function isEmpty (obj) {
   for (var key in obj) {
@@ -29,9 +30,9 @@ const Formik = ({touched, errors, isSubmitting}) => {
   });
   return (
     <Layout>
-      <Helmet>
-        <title>Refacc - Nous contacter</title>
-      </Helmet>
+    <SEO title="Refac - Nous contacter"
+      description="Contacter le REFACC pour avoir plus d'informations et conseils"
+    />
       <section className="flex justify-center items-start mb-20 mt-20 flex-wrap p-8 ">
         <div className="max-w-md mb-16 ">
           <h1 className="font-bold text-5xl">
