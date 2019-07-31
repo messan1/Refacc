@@ -5,6 +5,7 @@ module.exports = {
     author: `Messan Christian`,
     siteUrl: `https://refacc.com`,
     keywords:`['écologie','les JFAC','environnement','réchauffement climatique',''lutte contre le réchauffement climatique']`
+   
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

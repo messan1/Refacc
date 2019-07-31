@@ -118,7 +118,7 @@ class Homepage extends Component {
           <ScrollAnimation
             animateIn="fadeInLeft"
             animateOnce={true}
-            initiallyVisible={true}
+           
             afterAnimatedIn={this.handler}
           >
           {!this.state.str &&
