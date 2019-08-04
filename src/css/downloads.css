@@ -1,0 +1,120 @@
+.inf_slider_bg{
+  background-color: #F4F7F9;
+}
+.inf_d_btn{
+  background-color: #0CE682;
+  border: 5px solid #0CE682;
+  transition: 0.5s
+}
+.inf_d_btn:hover{
+  background-color: white;
+  color: #0CE682;
+  transition: 0.5s
+}
+.inf_card_bg{
+  width: 560px;
+  height: 250px;
+  padding: 35px;
+  background-color: #EBEFF2
+}
+.inf_card_bg{
+  height: auto;
+  width: auto;
+}
+.inf_book_container{
+  height: auto;
+  width: auto
+}
+.inf_mag_bg{
+  background-image: url("https://images.wallpaperscraft.com/image/valley_sunset_grass_sky_102973_1920x1080.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+}
+.card_mag{
+  height: auto;
+}
+.mag_text{
+  font-size: responsive;
+  min-font-size: 26px;
+  max-font-size: 45px;
+  upper-font-range: 820px;
+  upper-font-range: 1280px;
+}
+
+.book_text{
+  font-size: responsive;
+  min-font-size: 36px;
+  max-font-size: 55px;
+  upper-font-range: 820px;
+  upper-font-range: 1280px;
+}
+.inf_mag_bg{
+  padding-left: 15rem
+}
+@media(max-width:1192px){
+
+  .inf_slider_text{
+    text-align: start
+  }
+  .inf_mag_bg{
+    padding-left: 8rem
+  }
+}
+
+@media(max-width:715px){
+  .text_slide{
+    display: none
+  }
+  .inf_slider_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center
+  }
+}
+
+
+@media(max-width:719px){
+  .inf_slide_content{
+    flex-wrap: wrap
+  }
+  .inf_mag_bg{
+    padding-left: 15px
+  }
+}
+
+@media(max-width:1041px){
+  .inf_card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+  }
+  .inf_card_bg{
+    height: auto;
+  }
+
+}
+
+@media(max-width:640px){
+  .inf_card_container{
+    flex-wrap: wrap
+  }
+  .inf_mag_bg{
+    text-align: center
+  }
+}
+@media(max-width:693px){
+  .card_mag{
+    margin: 6px;
+    margin-top: 15px
+  }
+  .inf_mag_container{
+    justify-content: center;
+    align-items: center
+  }
+}

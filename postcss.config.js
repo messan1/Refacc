@@ -1,6 +1,6 @@
 const tailwindcss = require("tailwindcss");
 const purgecss = require("@fullhuman/postcss-purgecss");
-
+const ruck = require("rucksack-css")
 /**
  * Custom PurgeCSS Extractor
  * https://github.com/FullHuman/purgecss
@@ -15,6 +15,7 @@ module.exports = {
   plugins: [
     tailwindcss("./tailwind.config.js"),
     require("autoprefixer"),
+    ruck(),
     require("cssnano")({ preset: "default" }),
     process.env.NODE_ENV === "production" &&
       purgecss({
