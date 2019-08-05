@@ -13,6 +13,7 @@ const Mag = ({img}) => {
           <Book
           img={img}
           title="AfriK Ecolo"
+          link="https://cdn.filestackcontent.com/wnB0ST8qQ6iyodSnVktY" 
           />
         </div>
       </div>

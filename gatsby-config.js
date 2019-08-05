@@ -14,17 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-144706102-1',
-
-        head: false,
-
-        anonymize: true,
-
-        respectDNT: true,
-
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        
+        trackingId: 'UA-144706102-1'        
       },
     },
     {
@@ -57,7 +47,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Le Site Du REFACC`,
         short_name: `Refacc`,
         start_url: `/`,
         background_color: `#DA591A`,

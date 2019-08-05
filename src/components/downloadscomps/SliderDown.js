@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../css/downloads.css';
-import Btn from './Btn';
+import BtnDown from './BtnDown';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Slider = ({img}) => {
@@ -46,12 +46,12 @@ const Slider = ({img}) => {
             duration="5"
             animateOnce={true}
           >
-            <Btn text="Télécharger" />
+            <BtnDown text="Télécharger" link="https://cdn.filestackcontent.com/wnB0ST8qQ6iyodSnVktY" />
           </ScrollAnimation>
         </div>
         <div>
           <ScrollAnimation animateIn="zoomIn" animateOnce={true}>
-            <img src={img} alt="" />
+            <img src={img} alt="Document d'afik ecolo" />
           </ScrollAnimation>
         </div>
       </div>

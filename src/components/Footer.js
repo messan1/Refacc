@@ -20,7 +20,7 @@ function isEmpty (obj) {
 }
 
 const Formik = ({touched, errors, isSubmitting}) => {
-  const [send, setSend] = useState (false);
+  const [setSend] = useState (false);
   useEffect (() => {
     if (isEmpty (errors) && isSubmitting) {
       setSend (true);
@@ -123,7 +123,7 @@ const Formik = ({touched, errors, isSubmitting}) => {
           {' '}<FontAwesomeIcon icon={faUser} color="#3F9F42" size="2x" />
           <p className="font-bold text-xl ml-4">Nous suivre</p>
         </div>
-        <a href="https://web.facebook.com/refaccclimat/" target="_blank">
+        <a href="https://web.facebook.com/refaccclimat/" rel="noopener noreferrer" target="_blank">
           Sur Facebook
         </a>
       </div>
