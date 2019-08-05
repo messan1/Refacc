@@ -10,7 +10,7 @@ import Counter from '../Counter';
 import Partners from '../Partners';
 import '../../css/Homepage.css';
 import imgconf from '../../images/Activities/act1.png';
-import imgconf2 from '../../images/Activities/confJfac.jpg';
+import imgconf2 from '../../images/Activities/act2.jpg';
 import fomation from '../../images/formation.jpg';
 
 //Animation
