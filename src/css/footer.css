@@ -1,0 +1,47 @@
+.inf_footer{
+	background-color:#F4F5F7;
+	
+
+}
+
+.inf_footer_input,.inf_footer_place{
+	background-color: #E2E2E4;
+	border-radius: 5px;
+	color: #0C0C0D;
+	font-weight: bold;
+	padding-left: 20px;
+	
+}
+.inf_footer_btn{
+	background-color: #0B3150;
+	color: white;
+	font-weight: bold;
+	width: 100%;
+	border-radius: 5px;
+	margin-top: 4px;
+	padding: 5px
+}
+.listing li{
+	margin: 5px;
+}
+.listing{
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 3fr 1fr
+}
+.inf_box{
+	width: 400px;
+	border-radius: 18px
+}
+.inf_footer_input2{
+	margin-left: 5px
+}
+@media(max-width:577px){
+	.inf_footer_input2{
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	.inf_footer_input{
+		width: 100%
+	}
+}

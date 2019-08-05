@@ -1,0 +1,37 @@
+.inf-galeryback {
+  background-image: url("../images/refaccback.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: ease cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.inf-div-galery img {
+  transition: 1s;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px ,1fr));
+  grid-gap:15px;
+}
+.grid-container img {
+  box-shadow: 5px 2px rgb(255, 255, 255);
+  border-radius: 5px;
+  transition: 0.4s
+}
+.grid-container img:hover{
+  transform: scale(1.5)
+}
+
+@media(max-width:550px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(100px ,1fr));
+    grid-gap:15px;
+  }
+  .grid-container img:hover{
+    transform: none
+  }
+  
+}
