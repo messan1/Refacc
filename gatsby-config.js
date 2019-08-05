@@ -58,10 +58,10 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
-        short_name: `starter`,
+        short_name: `Refacc`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#DA591A`,
+        theme_color: `#DA591A`,
         display: `minimal-ui`,
         icon: `src/images/logorefacc.png`, // This path is relative to the root of the site.
       },
