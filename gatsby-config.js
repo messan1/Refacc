@@ -14,15 +14,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-144706102-1',
-
-        head: false,
-
-        anonymize: true,
-
-        respectDNT: true,
-
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
         
       },
     },
@@ -59,8 +50,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#DA591A`,
+        theme_color: `#DA591A`,
         display: `minimal-ui`,
         icon: `src/images/logorefacc.png`, // This path is relative to the root of the site.
       },
