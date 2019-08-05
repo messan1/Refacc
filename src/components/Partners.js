@@ -10,10 +10,13 @@ import partlog2 from '../images/h.jpg';
 //Query
 import {StaticQuery, graphql} from 'gatsby';
 
+//Mq
+import MediaQuery from 'react-responsive';
+
 //slider
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+import Carousel from "nuka-carousel";
 import PartnersLogo from './PartnersLogo';
+
 
 const Partners = () => (
   <StaticQuery
@@ -53,34 +56,46 @@ const Partners = () => (
 
           <h6 className="font-bold text-3xl ml-4  mt-8">NOS PARTENAIRES</h6>
         </div>
+        
         <div className="bg-grefacc h-1 w-16 m-auto mb-8" />
+        <MediaQuery query="(min-width: 1018px)">
         <div className="flex items-center flex-wrap justify-center">
-          <AliceCarousel
-            responsive={{
-              0: {items: 2},
-              355: {items: 3},
-              552: {items: 3},
-              956: {items: 5},
-              1024: {items: 9},
-            }}
-            autoPlayInterval={1000}
-            autoPlayDirection="rtl"
-            autoPlay={true}
-            fadeOutAnimation={true}
-            mouseDragEnabled={false}
-            playButtonEnabled={false}
-            disableAutoPlayOnAction={true}
-            dotsDisabled={true}
-            buttonsDisabled={true}
-          >
-          
+        <Carousel slidesToShow={10} cellSpacing={20} withoutControls="false" autoplay="true">
           {data.Refacc.partnerses.map(function(item){
-            return <PartnersLogo img={item.img.url} alt="" />
+            return  <PartnersLogo img={item.img.url} />
           })}
-          </AliceCarousel>
-
+          </Carousel>
         </div>
+        </MediaQuery>
+        <MediaQuery query="(max-width: 1018px)">
+        <div className="flex items-center flex-wrap justify-center">
+        <Carousel slidesToShow={6} cellSpacing={20} withoutControls="false" autoplay="true">
+          {data.Refacc.partnerses.map(function(item){
+            return  <PartnersLogo img={item.img.url} />
+          })}
+          </Carousel>
+        </div>
+        </MediaQuery>
+        <MediaQuery query="(max-width: 800px)">
+        <div className="flex items-center flex-wrap justify-center">
+        <Carousel slidesToShow={5} cellSpacing={20} withoutControls="false" autoplay="true">
+          {data.Refacc.partnerses.map(function(item){
+            return  <PartnersLogo img={item.img.url} />
+          })}
+          </Carousel>
+        </div>
+        </MediaQuery>
+        <MediaQuery query="(max-width: 577px)">
+        <div className="flex items-center flex-wrap justify-center">
+        <Carousel slidesToShow={3} cellSpacing={20} withoutControls="false" autoplay="true">
+          {data.Refacc.partnerses.map(function(item){
+            return  <PartnersLogo img={item.img.url} />
+          })}
+          </Carousel>
+        </div>
+        </MediaQuery>
       </div>
+     
     )}
   />
 );
