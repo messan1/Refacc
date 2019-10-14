@@ -150,7 +150,7 @@ const Footer = withFormik ({
   }),
   handleSubmit (values, {resetForm, setErrors, setSubmitting}) {
     axios
-      .post ('http://restapi.cogenius.shop/api/jfac20/contact', values, {
+      .post ('https://restapi.cogenius.shop/api/jfac20/contact', values, {
         headers: {Accept: 'application/json'},
       })
       .then (function (res) {
