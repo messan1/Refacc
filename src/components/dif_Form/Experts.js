@@ -47,23 +47,28 @@ const Formik = ({touched, errors, isSubmitting}) => {
             component="select"
           >
             <option value="Atelier 1">
-              Atelier 1 : Rôle des collectivités territoriales et du secteur privé dans la production décentralisée d’énergies renouvelables : solaire, biomasse, petite hydroélectricité.
+              Atelier 1 : Processus PNA Alternatives d'adaptation de l'agriculture Agroécologie, agro-foresterie Restauration des terres
+
             </option>
             <option value="Atelier 2">
-              Atelier 2 : Villes durables - défis urbains dans les villes africaines et Accès aux financements climatiques
-            </option>
+              Atelier 2 : Agri business et transition écologique Employabilité des jeunes, métiers et business écologiques
+
+              </option>
             <option value="Atelier 3">
-              Atelier 3 : Rôle de la recherche et de la Formation dans la transition vers l'économie verte
-            </option>
+              Atelier 3 : Processus NDC Villes et Régions durables Elaboration de schéma directeur et plan climat Mobilisation de fonds climatiques
+
+              </option>
             <option value="Atelier 4">
-              Atelier 4 : Bonnes pratiques agroécologiques : partage d’expériences et leçons apprises
-            </option>
+              Atelier 4 :Energies nouvelles et renouvelables dans les collectivités Atelier de partage d'expériences entre Régions
+
+               </option>
             <option value="Atelier 5">
-              Atelier 5 : Intégration des objectifs CDN et ODD dans les plans nationaux et Régionaux de développement
-            </option>
+              Atelier 5 :Bois énergie, bioénergies, alternatives
+              </option>
             <option value="Atelier 6">
-              Atelier 6 : Environnement, Changement Climatique et Santé
-            </option>
+              Atelier 6 :Nouveau code forestier Gestion de la chasse durable, faune
+
+               </option>
           </Field>
         </div>
         <div className="">
@@ -129,7 +134,7 @@ const Experts = withFormik ({
   }),
   handleSubmit (values, {resetForm, setErrors, setSubmitting}) {
     axios
-      .post ('https://refaccapi.herokuapp.com/api/jfac20/experts', values, {
+      .post ('http://restapi.cogenius.shop/api/jfac20/experts', values, {
         headers: {Accept: 'application/json'},
       })
       .then (function (res) {

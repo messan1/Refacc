@@ -112,7 +112,7 @@ const Presse = withFormik ({
   }),
   handleSubmit (values, {resetForm, setErrors, setSubmitting}) {
     axios
-      .post ('https://refaccapi.herokuapp.com/api/jfac20/presses', values, {
+      .post ('http://restapi.cogenius.shop/api/jfac20/presses', values, {
         headers: {Accept: 'application/json'},
       })
       .then (function (res) {
