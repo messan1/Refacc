@@ -1,10 +1,11 @@
 import React from "react";
-import {Link} from 'gatsby'
+import {Link,graphql} from 'gatsby'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPhone} from '@fortawesome/free-solid-svg-icons';
 
-export default ({ close }) => (
-  <div className="menu">
+export default ({close }) => {
+  return(
+    <div className="menu">
     <ul>
       <li onClick={close}><Link exact to="/">Acceuil</Link></li>
       <li onClick={close}><Link exact to="/">Refacc</Link></li>
@@ -18,4 +19,5 @@ export default ({ close }) => (
       <li onClick={close}>Fermer</li>
     </ul>
   </div>
-);
+  );
+}

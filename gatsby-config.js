@@ -95,6 +95,43 @@ module.exports = {
         output:"/robot.txt",
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    }
+    },
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        baseUrl: "https://infinityapis.com/refaccapis",
+        // The protocol. This can be http or https.
+        protocol: "https",
+        hostingWPCOM: false,
+        useACF: true,
+        
+        acfOptionPageIds: [],
+        cookies: {},
+
+        verboseOutput: false,
+  
+        perPage: 100,
+        searchAndReplaceContentUrls: {
+          sourceUrl: "https://infinityapis.com/refaccapis",
+          replacementUrl: "https://refacc.com",
+        },
+        
+        concurrentRequests: 20,
+        includedRoutes: [
+          "**/categories",
+          "**/posts",
+          "**/pages",
+          "**/media",
+          "**/tags",
+          "**/taxonomies",
+          "**/users",
+        ],
+
+        keepMediaSizes: false,
+        normalizer: function({ entities }) {
+          return entities
+        },
+      },
+    },
   ],
 }
