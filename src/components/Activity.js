@@ -3,6 +3,7 @@ import "../css/animation.css";
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import place from '../images/partPlace/placeholder.jpg'
+import {Markup} from "interweave"
 
 const Activity = ({title,content,img}) =>{
   return(
@@ -14,7 +15,8 @@ const Activity = ({title,content,img}) =>{
       </div>
       <h3 className="font-bold text-black text-xl">{title}</h3>
       <p className="text-justify text-gray-600">
-      {content}</p>
+      <Markup content= {content} />
+      </p>
     </div>
   )
 }
