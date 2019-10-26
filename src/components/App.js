@@ -1,76 +1,50 @@
-import React from 'react';
-import {Link} from "gatsby"
-import Navbar from './Navbar';
-import Banner from './Banner';
-import '../css/animation.css';
+import React from "react"
+import { Link, graphql, StaticQuery } from "gatsby"
+import Navbar from "./Navbar"
+import Banner from "./Banner"
+import "../css/animation.css"
 
-
-function App () {
-  return (
-    <div>
-      <Banner />
-      <div className="bg-black w-0 h-0 hidden">
-        menu
-      </div>
-      <Navbar>
-        <Link
-          className=" text-lg lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-grefacc text-black font-bold"
-          exact
-          to="/"
-          activeClassName="active"
-        >
-          Acceuil
-        </Link>
-        <Link
-          className="text-lg lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-grefacc text-black font-bold"
-          exact
-          to="/"
-          activeClassName="active"
-        >
-          Refacc
-        </Link>
-        <Link
-          className="text-lg lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-grefacc text-black font-bold"
-          exact
-          to="/"
-          activeClassName="active"
-        >
-          Zoom sur
-        </Link>
-        <Link
-          className="text-lg lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-grefacc text-black font-bold"
-          exact
-          to="/les-jfac-20"
-          activeClassName="active"
-        >
-          JFAC
-        </Link>
-        <Link
-          className="text-lg lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-grefacc text-black font-bold"
-          to="/nous-contacter"
-          activeClassName="active"
-        >
-          Nous contacter
-        </Link>
-        <Link
-          className="text-lg lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-grefacc text-black font-bold"
-          exact
-          to="/la-galerie-des-jfac"
-          activeClassName="active"
-        >
-          Galerie
-        </Link>
-        <Link
-          className="text-lg lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-grefacc text-black font-bold"
-          exact
-          to="/videotheque"
-          activeClassName="active"
-        >
-          Vidéos
-        </Link>
-      </Navbar>
-    </div>
-  );
-}
-
-export default App;
+export default () => (
+  <StaticQuery
+    query={graphql`
+    query{
+      ApisRefacc {
+        menus {
+          nodes {
+            menuItems {
+              edges {
+                node {
+                  label
+                  url
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    `}
+    render={data => {
+      return (
+        <div>
+          <Banner />
+          <div className="bg-black w-0 h-0 hidden">menu</div>
+          <Navbar>
+            {data.ApisRefacc.menus.nodes[0].menuItems.edges.map(node => (
+              <Link
+                className=" text-lg lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-grefacc text-black font-bold"
+                exact
+                to={node.node.url}
+                key={node.node.id}
+                activeClassName="active"
+              >
+                {node.node.label}
+              </Link>
+            ))}
+          </Navbar>
+        </div>
+      )
+    }}
+  />
+)

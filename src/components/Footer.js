@@ -20,7 +20,7 @@ function isEmpty (obj) {
 }
 
 const Formik = ({touched, errors, isSubmitting}) => {
-  const [send, setSend] = useState (false);
+  const [setSend] = useState (false);
   useEffect (() => {
     if (isEmpty (errors) && isSubmitting) {
       setSend (true);
