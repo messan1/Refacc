@@ -3,11 +3,11 @@ import img from '../images/slide/slide1.jpg';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
-const SlideShow = () => {
+const SlideShow = ({url}) => {
   const images = [
     {
-      original: img,
-      originalAlt:"Les JFAC 2020"
+      original: url.sourceUrl,
+      originalAlt:url.altText
     },
   ]
 
