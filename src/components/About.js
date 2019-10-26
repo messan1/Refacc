@@ -3,7 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component"
 import "react-lazy-load-image-component/src/effects/blur.css"
 import { StaticQuery, graphql } from "gatsby"
 import ScrollAnimation from "react-animate-on-scroll"
-import { Markup } from "interweave"
+
 
 export default () => (
   <StaticQuery
@@ -43,8 +43,8 @@ export default () => (
             <h6 className="font-bold text-2xl mb-2">
               {data.ApisRefacc.page.a_propos.titleabout}
             </h6>
-            <p className="text-justify text-gray-600">
-              <Markup content={data.ApisRefacc.page.a_propos.contentabout} />
+            <p dangerouslySetInnerHTML={{__html:data.ApisRefacc.page.a_propos.contentabout}} className="text-justify text-gray-600">
+              
             </p>
             <div className="mt-8 border-4 border-grefacc flex justify-around items-center">
               <span className="xl:text-7xl font-bold md:text-6xl text-grefacc m-4 tiny:text-5xl lg:text-6xl md:text-4xl lg:m-0">

@@ -3,7 +3,6 @@ import "../css/animation.css";
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import place from '../images/partPlace/placeholder.jpg'
-import {Markup} from "interweave"
 import "../css/Activity.css";
 
 const Activity = ({title,content,img}) =>{
@@ -15,8 +14,8 @@ const Activity = ({title,content,img}) =>{
         <LazyLoadImage placeholderSrc={place}  effect="blur" src={img} alt="" className="object-cover" />
       </div>
       <h3 className="font-bold text-black text-xl">{title}</h3>
-      <p className="text-justify text-gray-600">
-      <Markup content= {content} />
+      <p dangerouslySetInnerHTML={{__html:content}} className="text-justify text-gray-600">
+      
       </p>
     </div>
   )
