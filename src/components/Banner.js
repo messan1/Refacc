@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
+import ReactHtmlParser from 'react-html-parser';
 
 
 export default () => (
@@ -30,8 +31,8 @@ const Banner = ({ data }) => {
   return (
     <div className="flex justify-center flex-wrap items-center">
       <div>
-        <h1 dangerouslySetInnerHTML={{__html:data.headertitle}} className="font-bold text-2xl sm:text-3xl text-center text-jfaccolor">
-          
+        <h1 className="font-bold text-2xl sm:text-3xl text-center text-jfaccolor">
+          {ReactHtmlParser(data.headertitle)}
         </h1>
         <p className="font-bold text-center">{data.texteSecond}</p>
       </div>

@@ -4,6 +4,7 @@ import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import place from '../images/partPlace/placeholder.jpg'
 import "../css/Activity.css";
+import ReactHtmlParser from 'react-html-parser';
 
 const Activity = ({title,content,img}) =>{
   return(
@@ -14,8 +15,8 @@ const Activity = ({title,content,img}) =>{
         <LazyLoadImage placeholderSrc={place}  effect="blur" src={img} alt="" className="object-cover" />
       </div>
       <h3 className="font-bold text-black text-xl">{title}</h3>
-      <p dangerouslySetInnerHTML={{__html:content}} className="text-justify text-gray-600">
-      
+      <p className="text-justify text-gray-600">
+      {ReactHtmlParser(content)}
       </p>
     </div>
   )
