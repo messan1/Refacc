@@ -1,19 +1,46 @@
-import React from 'react';
-import jfac from '../images/2020b.jpg';
+import React from "react"
+import { graphql, StaticQuery } from "gatsby"
+import { Markup } from 'interweave';
 
-const Banner = () => {
+export default () => (
+  <StaticQuery
+    query={graphql`
+    query {
+      ApisRefacc {
+        postBy(slug: "banner") {
+          enTTe {
+            headertitle
+            texteSecond
+            imageDeLenTete {
+              altText
+              title
+              sourceUrl
+            }
+          }
+        }
+      }
+    }
+    
+    `}
+    render={data => <Banner data={data.ApisRefacc.postBy.enTTe} />}
+  />
+)
+
+const Banner = ({ data }) => {
   return (
     <div className="flex justify-center flex-wrap items-center">
       <div>
         <h1 className="font-bold text-2xl sm:text-3xl text-center text-jfaccolor">
-          Lancement des <span className="text-grefacc">JFAC 2020</span>
+          <Markup content={data.headertitle}/>
         </h1>
-        <p className="font-bold text-center">
-          Les Journées africaines de l’écologie et des changements climatiques
-        </p>
+        <p className="font-bold text-center">{data.texteSecond}</p>
       </div>
-      <img src={jfac} className="block max-w-auto p-4" alt="" />
+      <img
+        src={data.imageDeLenTete.sourceUrl}
+        className="block max-w-auto p-4"
+        alt={data.imageDeLenTete.altText}
+        title={data.imageDeLenTete.title}
+      />
     </div>
-  );
-};
-export default Banner;
+  )
+}
