@@ -3,30 +3,29 @@ import { LazyLoadImage } from "react-lazy-load-image-component"
 import "react-lazy-load-image-component/src/effects/blur.css"
 import { StaticQuery, graphql } from "gatsby"
 import ScrollAnimation from "react-animate-on-scroll"
-import {Markup} from 'interweave'
+import { Markup } from "interweave"
 
-export default () => {
+export default () => (
   <StaticQuery
-  query={graphql`
-  query{
-    ApisRefacc {
-      page(id: "cGFnZToxNA==") {
-        a_propos {
-          titleabout
-          years
-          contentabout
-          yearsText
-          imageabout {
-            altText
-            title
-            sourceUrl
+    query={graphql`
+      query {
+        ApisRefacc {
+          page(id: "cGFnZToxNA==") {
+            a_propos {
+              titleabout
+              years
+              contentabout
+              yearsText
+              imageabout {
+                altText
+                title
+                sourceUrl
+              }
+            }
           }
         }
       }
-    }
-  }
-  
-  `}
+    `}
     render={data => (
       <div className="flex flex-1 justify-around items-start h-auto mb-24 md:flex-no-wrap sm:flex-wrap tiny:flex-wrap">
         <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
@@ -42,7 +41,7 @@ export default () => {
           <div className="w-2/4 bg-white md:ml-8 self-start sm:w-full sm:m-0 tiny:w-full">
             <h5 className="font-bold text-sm mb-2 text-grefacc">A propos</h5>
             <h6 className="font-bold text-2xl mb-2">
-            {data.ApisRefacc.page.a_propos.imageabout.sourceUrl}
+              {data.ApisRefacc.page.a_propos.titleabout}
             </h6>
             <p className="text-justify text-gray-600">
               <Markup content={data.ApisRefacc.page.a_propos.contentabout} />
@@ -68,4 +67,4 @@ export default () => {
       </div>
     )}
   />
-}
+)

@@ -70,7 +70,7 @@ export default () => (
           ACTIVITES DES JFAC 2019
         </h6>
         <div className="bg-grefacc h-1 w-16 m-auto mb-8" />
-        <div className="flex flex-wrap justify-around items-center">
+        <div className="flex activityflex items-center">
           <Activity
             img={data.ApisRefacc.page.jfacactivities1.imageone.sourceUrl}
             title={data.ApisRefacc.page.jfacactivities1.titleone}

@@ -3,13 +3,14 @@ import '../css/video.css';
 import {Link} from 'gatsby';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPlayCircle} from '@fortawesome/free-solid-svg-icons';
+
 const SmallVideo = ({link,title,img,tag}) => {
   return (
     <Link
       className="relative bg-black mb-24 m-4"
       style={{
-        height: '300px',
-        width: '400px',
+        height: '200px',
+        width: '300px',
         backgroundImage: `url(${img})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',

@@ -4,3 +4,15 @@
   right: 0;
   padding: 5px
 }
+.activitycard{
+  max-width: 300px;
+}
+.showmorevideotech{
+  max-width: 200px;
+}
+@media(max-width:874px){
+  .activityflex{
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+}

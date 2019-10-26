@@ -19,18 +19,18 @@ const Galery = () => {
     </div>
     <div className="flex flex-wrap justify-center mt-8 inf-div-galery">
      
-        <LazyLoadImage effect="blur" className=" m-2 w-auto h-56 object-cover" src={img1} alt="" />
+        <LazyLoadImage effect="blur" className=" m-2 imagegalerywith h-56 object-cover" src={img1} alt="" />
      
       
-        <LazyLoadImage effect="blur" className=" m-2 w-auto  h-56 object-cover" src={img2} alt="" />
+        <LazyLoadImage  effect="blur" className=" m-2 imagegalerywith  h-56 object-cover" src={img2} alt="" />
       
-        <LazyLoadImage effect="blur" className=" m-2 w-auto h-56 object-cover" src={img3} alt="" />
+        <LazyLoadImage effect="blur" className=" m-2 imagegalerywith h-56 object-cover" src={img3} alt="" />
       
-        <LazyLoadImage effect="blur" className=" m-2 w-auto h-56 object-cover" src={img4} alt="" />
+        <LazyLoadImage effect="blur" className=" m-2 imagegalerywith h-56 object-cover" src={img4} alt="" />
       
-        <LazyLoadImage effect="blur" className=" m-2 w-auto h-56 object-cover" src={img5} alt="" />
+        <LazyLoadImage effect="blur" className=" m-2 imagegalerywith h-56 object-cover" src={img5} alt="" />
       
-        <LazyLoadImage effect="blur" className=" m-2 w-auto h-56 object-cover" src={img6} alt="" />
+        <LazyLoadImage effect="blur" className=" m-2 imagegalerywith h-56 object-cover" src={img6} alt="" />
     </div>
   </div>
     </div>
