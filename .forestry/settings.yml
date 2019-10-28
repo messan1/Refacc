@@ -5,7 +5,11 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
-  label: Partenaires
+  label: Images
+- type: document
+  path: content/galerie.json
+  label: Galerie des JFAC
+  match: "**/*"
 - type: document
   path: content/partners.json
   label: Partenaires
