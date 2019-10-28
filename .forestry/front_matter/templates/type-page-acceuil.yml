@@ -10,3 +10,11 @@ fields:
     min: 
     max: 
   label: En-tête
+- name: a_propos
+  type: blocks
+  label: A propos
+  template_types:
+  - a-propos
+  config:
+    min: 
+    max: 
