@@ -39,6 +39,10 @@ fields:
     config:
       required: true
     label: Nom Prénoms et Poste
+  - name: left
+    type: boolean
+    label: Left
+    default: true
   - name: contenu
     type: textarea
     default: ''
