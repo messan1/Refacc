@@ -83,6 +83,31 @@ fields:
   label: About
 - name: activities
   type: field_group_list
+  fields:
+  - name: activity
+    type: field_group
+    config: {}
+    fields:
+    - name: image_de_l_activite
+      type: file
+      config:
+        maxSize: 250
+      label: Image de l'activité
+    - name: titre_de_l_activite
+      type: text
+      config:
+        required: true
+      label: Titre de l'activité
+    - name: contenu_de_l_activite
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Contenu de l'activité
+    label: Activity
   config:
     min: '3'
     max: '5'
