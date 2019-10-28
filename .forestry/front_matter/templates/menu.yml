@@ -7,6 +7,13 @@ fields:
   config:
     required: true
   label: Nom du Menu
+- name: slug
+  type: text
+  config:
+    required: true
+  default: élément de la forme slug (page_deux_du_site)
+  label: Slug
+  description: 'Lien '
 - name: page
   type: blocks
   label: Page
