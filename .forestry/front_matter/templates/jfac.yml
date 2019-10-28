@@ -66,6 +66,16 @@ fields:
     config:
       maxSize: 250
     label: Photo
+  - name: animationin
+    type: text
+    config:
+      required: false
+    label: AnimationIn
+  - name: animationout
+    type: text
+    config:
+      required: false
+    label: AnimationOut
   config:
     min: 
     max: 
