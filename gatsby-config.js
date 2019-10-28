@@ -20,34 +20,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "data",
-        path: `${__dirname}/content/data`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "menus",
-        path: `${__dirname}/content/menus`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "dispositions",
-        path: `${__dirname}/content/dispositions`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "pages",
-        path: `${__dirname}/content/pages`,
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: "images",
@@ -169,7 +141,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./content/pages/`,
+        name: "pages",
+        path: `${__dirname}/content/pages`,
       },
     },
     {
