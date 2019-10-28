@@ -12,3 +12,5 @@ fields:
       type: pages
       section: menu-45ff0f33-f26c-4fb5-ad9d-38531aca5b8e
   label: Eléments
+pages:
+- content/dispositions/Disposition_1.md
