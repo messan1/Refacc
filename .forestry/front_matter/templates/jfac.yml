@@ -11,11 +11,6 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: title
-    type: text
-    config:
-      required: true
-    label: Title
   - name: le_titre
     type: text
     config:
@@ -44,6 +39,11 @@ fields:
     config:
       required: true
     label: Nom Prénoms et Poste
+  - name: le_titre
+    type: text
+    config:
+      required: false
+    label: Le Titre
   - name: left
     type: boolean
     label: Left
