@@ -16,6 +16,11 @@ fields:
     config:
       required: true
     label: Title
+  - name: le_titre
+    type: text
+    config:
+      required: false
+    label: Le titre
   - name: contenu
     type: textarea
     default: ''
