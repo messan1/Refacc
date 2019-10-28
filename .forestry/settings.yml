@@ -5,6 +5,12 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
+  label: Partenaires
+- type: document
+  path: content/partners.json
+  label: Partenaires
+  match: "**/*"
+- type: heading
   label: Pages
 - type: document
   path: content/pages/home.json
