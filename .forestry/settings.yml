@@ -5,6 +5,13 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
+  label: Menu
+- type: document
+  path: content/pages/menu.json
+  label: menu
+  match: "**/*"
+  read_only: true
+- type: heading
   label: Images
 - type: document
   path: content/pages/galerie.json
