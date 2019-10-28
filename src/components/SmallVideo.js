@@ -11,7 +11,7 @@ const SmallVideo = ({link,title,img,tag}) => {
       style={{
         height: '200px',
         width: '300px',
-        backgroundImage: `url(${img})`,
+        backgroundImage: `url(${"https://res.cloudinary.com/infinityapis/image/upload"+img})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
       }}

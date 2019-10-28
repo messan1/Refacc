@@ -9,53 +9,19 @@ export default () => (
   <StaticQuery
     query={graphql`
       query {
-        ApisRefacc {
-          page(id: "cGFnZToxNA==") {
-            jfacactivities1 {
-              contentone
-              titleone
-              imageone {
-                altText
-                title
-                sourceUrl
+        allPagesJson {
+          edges {
+            node {
+              activities {
+                contenu_de_l_activite
+                image_de_l_activite
+                titre_de_l_activite
               }
-            }
-            jfacactivities2 {
-              contenttwo
-              titletwo
-              imagetwo {
-                altText
-                title
-                sourceUrl
-              }
-            }
-            jfacactivities3 {
-                contentthree
-                titlethree
-                imagethree {
-                  altText
-                  title
-                  sourceUrl
-                }
-              }
-            video1 {
-              tagvideoone
-              titlevideoone
-              urlvideoone
-              imagevideoone {
-                altText
-                title
-                sourceUrl
-              }
-            }
-            video2 {
-              tagvideotwo
-              titlevideotwo
-              urlvideotwo
-              imagevideotwo {
-                altText
-                title
-                sourceUrl
+              videos {
+                images_de_la_video
+                lien_youtube_de_la_video
+                tag
+                titre_de_la_video
               }
             }
           }
@@ -71,23 +37,13 @@ export default () => (
         </h6>
         <div className="bg-grefacc h-1 w-16 m-auto mb-8" />
         <div className="flex activityflex items-center">
-          <Activity
-            img={data.ApisRefacc.page.jfacactivities1.imageone.sourceUrl}
-            title={data.ApisRefacc.page.jfacactivities1.titleone}
-            content={data.ApisRefacc.page.jfacactivities1.contentone}
-          />
-
-          <Activity
-            img={data.ApisRefacc.page.jfacactivities2.imagetwo.sourceUrl}
-            title={data.ApisRefacc.page.jfacactivities2.titletwo}
-            content={data.ApisRefacc.page.jfacactivities2.contenttwo}
-          />
-
-          <Activity
-            img={data.ApisRefacc.page.jfacactivities3.imagethree.sourceUrl}
-            title={data.ApisRefacc.page.jfacactivities3.titlethree}
-            content={data.ApisRefacc.page.jfacactivities3.contentthree}
-          />
+          {data.allPagesJson.edges[0].node.activities.map(activity => (
+            <Activity
+              img={"https://res.cloudinary.com/infinityapis/image/upload"+activity.image_de_l_activite}
+              title={activity.titre_de_l_activite}
+              content={activity.contenu_de_l_activite}
+            />
+          ))}
         </div>
 
         <h6 className="text-center font-bold text-2xl mt-8 ">
@@ -95,18 +51,14 @@ export default () => (
         </h6>
         <div className="bg-grefacc h-1 w-16 m-auto mb-4" />
         <div className="flex  items-center flex-wrap justify-center">
-          <SmallVideo
-            link={data.ApisRefacc.page.video1.urlvideoone}
-            title={data.ApisRefacc.page.video1.titlevideoone}
-            img={data.ApisRefacc.page.video1.imagevideoone.sourceUrl}
-            tag={data.ApisRefacc.page.video1.tagvideoone}
-          />
-          <SmallVideo
-            link={data.ApisRefacc.page.video2.urlvideotwo}
-            title={data.ApisRefacc.page.video2.titlevideotwo}
-            img={data.ApisRefacc.page.video2.imagevideotwo.sourceUrl}
-            tag={data.ApisRefacc.page.video2.tagvideotwo}
-          />
+          {data.allPagesJson.edges[0].node.videos.map(video => (
+            <SmallVideo
+              link={video.lien_youtube_de_la_video}
+              title={video.titre_de_la_video}
+              img={video.images_de_la_video}
+              tag={video.tag}
+            />
+          ))}
 
           <MoreActivity />
         </div>

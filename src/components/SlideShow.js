@@ -5,7 +5,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 const SlideShow = ({url}) => {
   const images = [
     {
-      original: url.sourceUrl,
+      original: "https://res.cloudinary.com/infinityapis/image/upload"+url,
       originalAlt:url.altText
     },
   ]
