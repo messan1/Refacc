@@ -18,15 +18,16 @@ import PartnersLogo from './PartnersLogo';
 const Partners = () => (
   <StaticQuery
     query={graphql`
-            query {Refacc{
-              partnerses{
-                img{
-                  id
-                  url
-                  }
-                }
-              }
-            }
+    query {
+      allPagesJson {
+        edges {
+          node {
+            partenaires
+          }
+        }
+      }
+    }
+    
           `}
 
     render={data => (
@@ -74,8 +75,8 @@ const Partners = () => (
             buttonsDisabled={true}
           >
           
-          {data.Refacc.partnerses.map(function(item){
-            return <PartnersLogo img={item.img.url} alt="" />
+          {data.allPagesJson.edges[1].node.partenaires.map(function(item){
+            return <PartnersLogo img={ "https://res.cloudinary.com/infinityapis/image/upload" +item} alt="" />
           })}
           </AliceCarousel>
 

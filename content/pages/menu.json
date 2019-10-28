@@ -1,0 +1,43 @@
+[
+    {
+        "nom":"Accueil",
+        "slug":"accueil",
+        "link":"/"
+    },
+    
+    {
+        "nom":"Refacc",
+        "slug":"refacc",
+        "link":"/"
+    },
+    
+    {
+        "nom":"Zoom Sur",
+        "slug":"zoom-sur",
+        "link":"/"
+    },
+    
+    {
+        "nom":"JFAC",
+        "slug":"jfac",
+        "link":"/les-jfac-20"
+    },
+    
+    {
+        "nom":"Nous contacter",
+        "slug":"nous-contacter",
+        "link":"/nous-contacter"
+    },
+    
+    {
+        "nom":"Galerie",
+        "slug":"galerie",
+        "link":"/la-galerie-des-jfac"
+    },
+    
+    {
+        "nom":"Vidéothèque",
+        "slug":"videotheque",
+        "link":"/videotheque"
+    }
+]
