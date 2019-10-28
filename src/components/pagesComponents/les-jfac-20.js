@@ -6,13 +6,12 @@ import SpeakerBox from "../SpeakerBox"
 import Partners from "../Partners"
 import Form from "../Form"
 import { Link } from "gatsby"
-import ReactHtmlParser from 'react-html-parser';
+import ReactHtmlParser from "react-html-parser"
 
 //speakers
 import speak2 from "../../images/speakers/1.png"
 import speak3 from "../../images/speakers/2.png"
 import speak1 from "../../images/speakers/jp.png"
-import lc from "../../images/speakers/lc.png"
 
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import "react-lazy-load-image-component/src/effects/blur.css"
@@ -27,21 +26,25 @@ import { graphql, StaticQuery } from "gatsby"
 export default () => (
   <StaticQuery
     query={graphql`
-      query{
+      query {
         allPagesJson {
           edges {
             node {
-              a_propos_des_jfac {
-                contenu
-                image
-                title
-              }
-              jfac19 {
+              a {
+                animationin
+                animationout
                 contenu
                 le_titre
                 left
                 nom_prenoms_et_poste
                 photo
+                right
+              }
+              a_propos_des_jfac {
+                contenu
+                le_titre
+                image
+                title
               }
             }
           }
@@ -88,16 +91,23 @@ export default () => (
             >
               <div className="flex xl:h-64 mdi:h-64 lg:h-64 md:lg:h-64 mb-8 justify-center flex-wrap items-center mdi:flex-col mdi:relative max-w-4xl m-auto">
                 <div className="shadow-lg h-auto max-w-lg p-8 mdi:absolute mdi:mb-8  left-0 bg-white">
-                  <h3 className="font-bold text-3xl mb-2">{data.allPagesJson.edges[1].node.title}</h3>
+                  <h3 className="font-bold text-3xl mb-2">
+                    {data.allPagesJson.edges[0].node.a_propos_des_jfac.title}
+                  </h3>
                   <p className="text-justify m-4">
-                  {ReactHtmlParser(data.allPagesJson.edges[1].node.contenu)}
+                    {ReactHtmlParser(
+                      data.allPagesJson.edges[0].node.a_propos_des_jfac.contenu
+                    )}
                   </p>
                 </div>
 
                 <div className="m-2 order-first h-auto max-w-4xl sm:max-w- mdi:max-w-sm ">
                   <LazyLoadImage
                     effect="blur"
-                    src={"https://res.cloudinary.com/infinityapis/image/upload"+data.allPagesJson.edges[1].node.image}
+                    src={
+                      "https://res.cloudinary.com/infinityapis/image/upload" +
+                      data.allPagesJson.edges[0].node.a_propos_des_jfac.image
+                    }
                     alt=""
                     className="object-cover max-w-sm h-auto w-full mdi:absolute"
                     style={{ left: "490px", bottom: "25px" }}
@@ -110,83 +120,25 @@ export default () => (
             <p className="text-center text-grefacc mt-2 font-bold text-xl">
               Les avis
             </p>
-
-            <div className="w-full flex justify-center flex-wrap flex-row ">
-              <ScrollAnimation
-                animateIn="fadeInRight"
-                animateOut="fadeOut"
-                animateOnce={true}
-              >
-                <SpeakerBox
-                  img={speak1}
-                  person="Prof Joseph SEKA
-                SEKA,"
-                  content="Nous sommes tous concernés par les
-                conséquences de la dégradation de notre
-                environnement et du changement climatique
-                et aucun pays africain, aucun secteur, aucune
-                couche sociale n'est épargnée. Les enjeux sont
-                réels et palpables. Et heureusement les
-                solutions existent pour proposer de nouveaux
-                modèles économiques plus durables basés sur
-                une croissance intelligente, équitable et
-                soucieuse des défis environnementaux et
-                sociaux. L’institution des journées africaines de
-                l'écologie se présente comme un espace
-                privilégié d’échange entre experts et de "
-                  left={true}
-                />
-              </ScrollAnimation>
-              <div className="bg-green-200 w-full flex justify-center items-center">
+            {data.allPagesJson.edges[0].node.a.map(avis => (
+              <div className="w-full flex justify-center flex-wrap flex-row ">
                 <ScrollAnimation
-                  animateIn="fadeInLeft"
-                  animateOut="fadeOut"
+                  animateIn={avis.animationin}
+                  animateOut={avis.animationout}
                   animateOnce={true}
                 >
                   <SpeakerBox
-                    img={speak2}
-                    person="SEM Tang WEIBIN"
-                    titre="Ambassadeur de la
-            République Populaire de Chine
-            en Côte d’Ivoire, au nom des
-            partenaires des JFAC 2019 :"
-                    content="««Les défis restent énormes et variés pour le
-            continent. La Chine a déployé une stratégie en
-            matière de lutte contre les changements
-            climatiques en se fixant un plan de contribution
-            en réponse aux changements climatiques à
-            travers la réduction de 60 à 65% son émission
-            de CO2 par unité de PIB d’ici 2030. Le pays a
-            réussi à réduire ses émissions de carbone de
-            45% en 2017. La Chine envisage de réaliser 50
-            projets d’aide dans le continent africain dans
-            les domaines du développement vert, de
-            l’écologie et de la protection de l’Environnement.»  "
-                    right={true}
+                    img={speak1}
+                    person={avis.nom_prenoms_et_poste}
+                    titre={avis.le_titre}
+                    content={avis.contenu}
+                    left={avis.left}
+                    right={avis.right}
                   />
                 </ScrollAnimation>
               </div>
-              <ScrollAnimation
-                animateIn="fadeInRight"
-                animateOut="fadeOut"
-                animateOnce={true}
-              >
-                <SpeakerBox
-                  img={speak3}
-                  person="M. Al-Hamdou DORSOUMA"
-                  titre="Responsable de la division Climat et
-          Croissance à la BAD :"
-                  content="«Ces journées de la transition écologique africaine sont
-          une opportunité de formation et de sensibilisation pour
-          les acteurs de nos pays. Nous nous tenons aux côtés des
-          experts du REFACC, et la BAD ira plus loin avec l'accroissement de 40% ses investissements vers les changements climatiques et la croissance verte, à partir de
-          2020. Ce qui va apporter plus de financement dans le
-          processus de transition écologique et surtout inverser
-          la forte tendance à la déforestation»"
-                  left={true}
-                />
-              </ScrollAnimation>
-            </div>
+            ))}
+
             <p className="text-center font-bold text-4xl mb-8">
               EDITION <span className="text-jfaccolor">JFAC 2020</span>
             </p>
