@@ -71,3 +71,5 @@ fields:
     max: 
     labelField: 
   label: Les avis
+pages:
+- content/pages/jfac19.json
