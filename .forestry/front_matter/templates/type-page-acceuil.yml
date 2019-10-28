@@ -1,4 +1,12 @@
 ---
 label: Type Page Acceuil
 hide_body: false
-fields: []
+fields:
+- name: en_tete
+  type: blocks
+  template_types:
+  - slide
+  config:
+    min: 
+    max: 
+  label: En-tête
