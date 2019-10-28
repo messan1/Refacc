@@ -26,6 +26,13 @@ fields:
     config:
       maxSize: 250
     label: image de la bannière
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+    hidden: true
+    default: homebanner
   label: Banner
 - name: header
   type: field_group
@@ -56,6 +63,13 @@ fields:
       required: false
     label: CTA
     default: En savoir plus
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+    hidden: true
+    default: homeheader
   label: Header
 - name: about
   type: field_group
@@ -80,6 +94,13 @@ fields:
     config:
       maxSize: 250
     label: image du A propos
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+    hidden: true
+    default: homeabout
   label: About
 - name: activities
   type: field_group_list
@@ -103,6 +124,13 @@ fields:
       schema:
         format: html-blocks
     label: Contenu de l'activité
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+    hidden: true
+    default: homeactivity
   config:
     min: '3'
     max: '5'
