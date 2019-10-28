@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: Menu
 - type: directory
   path: content/menus
   label: Menu
@@ -13,7 +15,15 @@ sections:
   templates:
   - menu
 - type: heading
-  label: Menu
+  label: Disposition du menu
+- type: directory
+  path: content/dispositions
+  label: Disposition du menu
+  create: documents
+  match: "**/*"
+  new_doc_ext: ".md"
+  templates:
+  - disposition-du-menu
 upload_dir: content/images
 public_path: "/content/images"
 front_matter_path: ''
