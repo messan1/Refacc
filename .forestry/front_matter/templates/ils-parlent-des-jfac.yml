@@ -1,4 +1,17 @@
 ---
 label: 'Ils parlent des JFAC '
 hide_body: false
-fields: []
+fields:
+- name: jfac_-_les_avis
+  type: field_group_list
+  fields:
+  - name: nom_de_la_structure_ou_personne_
+    type: text
+    config:
+      required: true
+    label: 'Nom de la structure ou Personne '
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: JFAC - Les avis
