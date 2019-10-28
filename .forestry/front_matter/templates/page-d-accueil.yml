@@ -1,4 +1,59 @@
 ---
 label: Page d’accueil
 hide_body: false
-fields: []
+fields:
+- name: titre_de_la_page
+  type: text
+  config:
+    required: true
+  label: Titre de la Page
+- name: banner
+  type: field_group
+  config: {}
+  fields:
+  - name: titre_de_la_banniere
+    type: text
+    config:
+      required: true
+    label: Titre de la bannière
+  - name: texte_de_la_baniere
+    type: text
+    config:
+      required: true
+    label: Texte de la banière
+  - name: image_de_la_banniere
+    type: file
+    config:
+      maxSize: 250
+    label: image de la bannière
+  label: Banner
+- name: header
+  type: field_group
+  config: {}
+  fields:
+  - name: titre_de_l_en-tete
+    type: text
+    config:
+      required: true
+    label: Titre de l'en-tête
+  - name: contenu_de_l_en-tete
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: contenu de l'en-tête
+  - name: image_de_l_en-tete
+    type: file
+    config:
+      maxSize: 250
+    label: image de l'en-tête
+  - name: cta
+    type: text
+    config:
+      required: false
+    label: CTA
+    default: En savoir plus
+  label: Header
