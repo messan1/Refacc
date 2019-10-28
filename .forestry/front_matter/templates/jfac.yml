@@ -48,6 +48,10 @@ fields:
     type: boolean
     label: Left
     default: true
+  - name: right
+    type: boolean
+    label: right
+    default: true
   - name: contenu
     type: textarea
     default: ''
