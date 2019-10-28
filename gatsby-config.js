@@ -148,8 +148,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: "added",
-        path: `${__dirname}/content`,
+        name: "components",
+        path: `${__dirname}/content/components`,
       },
     },
     {
