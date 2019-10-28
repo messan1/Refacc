@@ -3,22 +3,8 @@ label: Partenaires
 hide_body: true
 fields:
 - name: partenaires
-  type: field_group_list
-  fields:
-  - name: nom_du_partenaire
-    type: text
-    config:
-      required: true
-    label: Nom du partenaire
-  - name: logo_du_partenaire
-    type: file
-    config:
-      maxSize: 250
-    label: Logo du partenaire
-  config:
-    min: 
-    max: 
-    labelField: 
+  type: image_gallery
+  config: {}
   label: Partenaires
 pages:
 - content/partners.json
