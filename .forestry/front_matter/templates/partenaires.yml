@@ -20,3 +20,5 @@ fields:
     max: 
     labelField: 
   label: Partenaires
+pages:
+- content/partners.json
