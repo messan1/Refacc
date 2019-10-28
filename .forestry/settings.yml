@@ -21,7 +21,7 @@ sections:
   label: Disposition du menu
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - disposition-du-menu
 upload_dir: content/images
