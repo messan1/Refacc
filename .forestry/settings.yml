@@ -9,7 +9,7 @@ sections:
   label: Menu
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - menu
 - type: heading
