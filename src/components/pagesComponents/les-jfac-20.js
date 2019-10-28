@@ -8,11 +8,6 @@ import Form from "../Form"
 import { Link } from "gatsby"
 import ReactHtmlParser from "react-html-parser"
 
-//speakers
-import speak2 from "../../images/speakers/1.png"
-import speak3 from "../../images/speakers/2.png"
-import speak1 from "../../images/speakers/jp.png"
-
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import "react-lazy-load-image-component/src/effects/blur.css"
 import place from "../../images/partPlace/placeholder.jpg"
@@ -128,10 +123,10 @@ export default () => (
                   animateOnce={true}
                 >
                   <SpeakerBox
-                    img={speak1}
+                    img={avis.photo}
                     person={avis.nom_prenoms_et_poste}
                     titre={avis.le_titre}
-                    content={avis.contenu}
+                    content={ReactHtmlParser(avis.contenu)}
                     left={avis.left}
                     right={avis.right}
                   />
