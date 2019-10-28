@@ -17,6 +17,10 @@ sections:
 - type: document
   path: content/pages/home.json
   label: Accueil
+- type: document
+  path: content/jfac19.json
+  label: JFAC
+  match: "**/*"
 upload_dir: refacc/images
 public_path: ''
 front_matter_path: ''
