@@ -108,5 +108,33 @@ fields:
     max: '5'
     labelField: 
   label: Activities
+- name: videos
+  type: field_group_list
+  fields:
+  - name: images_de_la_video
+    type: file
+    config:
+      maxSize: 250
+    label: Images de la vidéo
+  - name: tag
+    type: text
+    config:
+      required: false
+    label: Tag
+  - name: titre_de_la_video
+    type: text
+    config:
+      required: true
+    label: Titre de la vidéo
+  - name: lien_youtube_de_la_video
+    type: text
+    config:
+      required: true
+    label: Lien youtube de la vidéo
+  config:
+    min: '2'
+    max: '5'
+    labelField: 
+  label: Vidéos
 pages:
 - content/pages/home.json
