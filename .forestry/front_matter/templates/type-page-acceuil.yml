@@ -12,3 +12,5 @@ fields:
   config: {}
   template: a-propos
   label: A propos
+pages:
+- content/posts/hello.md
