@@ -7,10 +7,10 @@ sections:
 - type: heading
   label: Images
 - type: document
-  path: content/galerie.json
+  path: content/pages/galerie.json
   label: Galerie des JFAC
 - type: document
-  path: content/partners.json
+  path: content/components/partners.json
   label: Partenaires
 - type: heading
   label: Pages
@@ -18,7 +18,7 @@ sections:
   path: content/pages/home.json
   label: Accueil
 - type: document
-  path: content/jfac19.json
+  path: content/pages/jfac19.json
   label: JFAC
 upload_dir: refacc/images
 public_path: ''
