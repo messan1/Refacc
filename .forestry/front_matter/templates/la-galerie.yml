@@ -3,20 +3,6 @@ label: La galerie
 hide_body: true
 fields:
 - name: la_galerie_des_jfac
-  type: field_group_list
-  fields:
-  - name: nom_de_l_image
-    type: text
-    config:
-      required: false
-    label: Nom de l'image
-  - name: image_des_jfac
-    type: file
-    config:
-      maxSize: 250
-    label: Image des JFAC
-  config:
-    min: 
-    max: 
-    labelField: 
+  type: image_gallery
+  config: {}
   label: La galerie des JFAC
