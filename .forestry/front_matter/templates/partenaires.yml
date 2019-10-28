@@ -6,5 +6,12 @@ fields:
   type: image_gallery
   config: {}
   label: Partenaires
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  hidden: true
+  default: partners
 pages:
 - content/pages/partners.json
