@@ -57,5 +57,36 @@ fields:
     label: CTA
     default: En savoir plus
   label: Header
+- name: about
+  type: field_group
+  config: {}
+  fields:
+  - name: titre_about
+    type: text
+    config:
+      required: true
+    label: Titre du A propos
+  - name: contenu_du_a_propos
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Contenu du A propos
+  - name: image_du_a_propos
+    type: file
+    config:
+      maxSize: 250
+    label: image du A propos
+  label: About
+- name: activities
+  type: field_group_list
+  config:
+    min: '3'
+    max: '5'
+    labelField: 
+  label: Activities
 pages:
 - content/pages/home.json
