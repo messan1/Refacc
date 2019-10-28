@@ -2,19 +2,13 @@
 label: Type Page Acceuil
 hide_body: false
 fields:
-- name: en_tete
-  type: blocks
-  template_types:
-  - slide
-  config:
-    min: 
-    max: 
-  label: En-tête
+- name: header
+  type: include
+  config: {}
+  template: slide
+  label: Header
 - name: a_propos
-  type: blocks
+  type: include
+  config: {}
+  template: a-propos
   label: A propos
-  template_types:
-  - a-propos
-  config:
-    min: 
-    max: 
