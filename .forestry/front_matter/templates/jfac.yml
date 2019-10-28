@@ -1,4 +1,60 @@
 ---
 label: JFAC
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: a_propos_des_jfac
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: contenu
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Contenu
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: Image
+  label: A propos des JFAC
+- name: a
+  type: field_group_list
+  fields:
+  - name: nom_prenoms_et_poste
+    type: text
+    config:
+      required: true
+    label: Nom Prénoms et Poste
+  - name: contenu
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Contenu
+  - name: photo
+    type: file
+    config:
+      maxSize: 250
+    label: Photo
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Les avis
