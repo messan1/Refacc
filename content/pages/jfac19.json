@@ -57,8 +57,8 @@
       "right": true,
       "contenu": "<p>«Ces journées de la transition écologique africaine sont une opportunité de formation et de sensibilisation pour les acteurs de nos pays. Nous nous tenons aux côtés des experts du REFACC, et la BAD ira plus loin avec l'accroissement de 40% ses investissements vers les changements climatiques et la croissance verte, à partir de 2020. Ce qui va apporter plus de financement dans le processus de transition écologique et surtout inverser la forte tendance à la déforestation»</p>",
       "photo": "/v1572268818/refacc/images/2-07aec175ce43aa823c99ea2cc6fece19_r0zu7u.png",
-      "animationin": "",
-      "animationout": ""
+      "animationin": "fadeInRight",
+      "animationout": "fadeOut"
     }
   ]
 }
