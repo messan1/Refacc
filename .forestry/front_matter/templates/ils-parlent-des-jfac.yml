@@ -10,6 +10,11 @@ fields:
     config:
       required: true
     label: 'Nom de la structure ou Personne '
+  - name: logo_ou_image_d_identite_
+    type: file
+    config:
+      maxSize: 250
+    label: 'Logo ou Image d''identité '
   config:
     min: 
     max: 
