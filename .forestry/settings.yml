@@ -6,14 +6,6 @@ webhook_url:
 sections:
 - type: heading
   label: Menu
-- type: directory
-  path: content/menus
-  label: Menus
-  create: all
-  match: "**/*"
-  new_doc_ext: md
-  templates:
-  - menu
 upload_dir: content/images
 public_path: "/content/images"
 front_matter_path: ''
