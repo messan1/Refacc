@@ -9,7 +9,6 @@ sections:
 - type: document
   path: content/pages/menu.json
   label: menu
-  match: "**/*"
   read_only: true
 - type: heading
   label: Images
