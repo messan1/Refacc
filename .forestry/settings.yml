@@ -4,15 +4,16 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: heading
-  label: Menu
 - type: directory
   path: content/menus
   label: Menu
-  create: all
+  create: documents
   match: "**/*"
+  new_doc_ext: ".md"
   templates:
-  - menus
+  - menu
+- type: heading
+  label: Menu
 upload_dir: content/images
 public_path: "/content/images"
 front_matter_path: ''
