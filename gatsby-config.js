@@ -29,6 +29,20 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "menus",
+        path: `${__dirname}/content/menus`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "dispositions",
+        path: `${__dirname}/content/dispositions`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "pages",
         path: `${__dirname}/content/pages`,
       },
@@ -150,6 +164,13 @@ module.exports = {
             }
           })
       }
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./content/pages/`,
+      },
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
