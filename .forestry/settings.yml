@@ -10,7 +10,7 @@ sections:
   path: content/pages/galerie.json
   label: Galerie des JFAC
 - type: document
-  path: content/components/partners.json
+  path: content/pages/partners.json
   label: Partenaires
 - type: heading
   label: Pages
