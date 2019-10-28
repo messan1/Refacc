@@ -1,5 +1,8 @@
 {
   "partenaires": [
-
+    {
+      "nom_du_partenaire": "one",
+      "logo_du_partenaire": "/v1572268441/refacc/images/1310dc9e2dd35f0c_e1gagf.jpg"
+    }
   ]
 }
