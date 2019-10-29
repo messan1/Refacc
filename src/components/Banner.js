@@ -32,7 +32,7 @@ const Banner = ({ data }) => {
         <h1 className="font-bold text-2xl sm:text-3xl text-center text-jfaccolor">
           {ReactHtmlParser(data.titre_de_la_banniere)}
         </h1>
-        <p className="font-bold text-center">{data.texte_de_la_baniere}</p>
+        <p className="font-bold text-center">{ReactHtmlParser(data.texte_de_la_baniere)}</p>
       </div>
       <img
         src={"https://res.cloudinary.com/infinityapis/image/upload"+data.image_de_la_banniere}
