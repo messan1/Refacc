@@ -37,7 +37,7 @@ export default () => (
         </h6>
         <div className="bg-grefacc h-1 w-16 m-auto mb-8" />
         <div className="flex activityflex items-center">
-          {data.allPagesJson.edges[1].node.activities.map(activity => (
+          {data.allPagesJson.edges[3].node.activities.map(activity => (
             <Activity
               img={"https://res.cloudinary.com/infinityapis/image/upload"+activity.image_de_l_activite}
               title={activity.titre_de_l_activite}
@@ -51,7 +51,7 @@ export default () => (
         </h6>
         <div className="bg-grefacc h-1 w-16 m-auto mb-4" />
         <div className="flex  items-center flex-wrap justify-center">
-          {data.allPagesJson.edges[1].node.videos.map(video => (
+          {data.allPagesJson.edges[3].node.videos.map(video => (
             <SmallVideo
               link={video.lien_youtube_de_la_video}
               title={video.titre_de_la_video}

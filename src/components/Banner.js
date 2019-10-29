@@ -21,7 +21,7 @@ export default () => (
     }
     
     `}
-    render={data => <Banner data={data.allPagesJson.edges[1].node.banner} />}
+    render={data => <Banner data={data.allPagesJson.edges[3].node.banner} />}
   />
 )
 

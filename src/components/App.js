@@ -26,15 +26,15 @@ export default () => (
           <Banner />
           <div className="bg-black w-0 h-0 hidden">menu</div>
           <Navbar>
-            {data.allMenuJson.edges.map(node => (
+            {data.allMenuJson.edges.map(edge => (
               <Link
                 className=" text-lg lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-grefacc text-black font-bold"
                 exact
-                to={node.link}
-                key={node.id}
+                to={edge.node.link}
+                key={edge.node.id}
                 activeClassName="active"
               >
-                {node.nom}
+                {edge.node.nom}
               </Link>
             ))}
           </Navbar>

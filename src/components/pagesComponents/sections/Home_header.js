@@ -30,16 +30,16 @@ export default () => (
          
             className="xl:text-4xl lg:text-4xl md:text-2xl mdi:text-2xl font-bold text-black"
           >
-            {ReactHtmlParser(data.allPagesJson.edges[1].node.header.titre_de_l_en_tete)}
+            {ReactHtmlParser(data.allPagesJson.edges[3].node.header.titre_de_l_en_tete)}
           </h1>
           <p className="xl:text-xl lg:text-xl md:text-lg w-auto text-black xl:font-bold ">
-       {ReactHtmlParser(data.allPagesJson.edges[1].node.header.contenu_de_l_en_tete)}
+       {ReactHtmlParser(data.allPagesJson.edges[3].node.header.contenu_de_l_en_tete)}
           </p>
           <button className="mt-8 bg-grefacc p-4 text-white font-bold">
-            {data.allPagesJson.edges[1].node.header.cta}
+            {data.allPagesJson.edges[3].node.header.cta}
           </button>
         </div>
-        <SlideShow url={data.allPagesJson.edges[1].node.header.image_de_l_en_tete} />
+        <SlideShow url={data.allPagesJson.edges[3].node.header.image_de_l_en_tete} />
       </div>
     )}
   />

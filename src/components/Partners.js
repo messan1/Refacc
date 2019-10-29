@@ -30,12 +30,6 @@ const Partners = () => (
       }
     `}
     render={data => {
-      data.allPagesJson.edges.map(edge=>{
-        data = edge.node.partenaires
-        if(data!=null){
-            return data;
-        }
-      })
       return (
         <div className="w-full  pb-8 pt-8">
           <div className="flex items-center mr-2 justify-center">
@@ -79,7 +73,7 @@ const Partners = () => (
               dotsDisabled={true}
               buttonsDisabled={true}
             >
-              {data.map(function(item) {
+              {data.allPagesJson.edges[2].node.partenaires.map(function(item) {
                 return (
                   <PartnersLogo
                     img={

@@ -47,7 +47,7 @@ export default () => (
       }
     `}
     render={data => {
-      data=data.allPagesJson.edges[2].node
+      data=data.allPagesJson.edges[0].node
       return (
         <div>
           <header className="inf-j20 flex justify-center flex-row pt-24 pb-24 items-center flex-wrap p-8 relative">
