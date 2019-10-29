@@ -53,9 +53,12 @@ export default () => (
             </h6>
             <p className="text-justify text-gray-600">
             {data.allPagesJson.edges.map(
-              edge =>
-                edge.node.about &&
-                ReactHtmlParser(edge.node.about.contenu_du_a_propos)
+              function(edge){
+                return(
+                  edge.node.about &&
+                  ReactHtmlParser(edge.node.about.contenu_du_a_propos)
+                )
+              }
             )}
               
             </p>
