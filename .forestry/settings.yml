@@ -26,7 +26,6 @@ sections:
 - type: document
   path: content/pages/videos.json
   label: Vidéothèque
-  match: "**/*"
 - type: document
   path: content/pages/galerie.json
   label: Galerie des JFAC

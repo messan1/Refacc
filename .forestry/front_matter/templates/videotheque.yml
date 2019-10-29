@@ -10,11 +10,6 @@ fields:
     config:
       required: true
     label: Lien
-  - name: image_de_la_video
-    type: text
-    config:
-      required: false
-    label: Image de la vidéo
   - name: titre_de_la_video
     type: text
     config:
@@ -26,6 +21,11 @@ fields:
       required: false
     label: Tag de la vidéo
     default: Ecologie
+  - name: image_de_la_video
+    type: file
+    config:
+      maxSize: 250
+    label: Image de la vidéo
   config:
     min: 
     max: 
