@@ -156,7 +156,7 @@ const Participants = withFormik ({
   }),
   handleSubmit (values, {resetForm, setErrors, setSubmitting}) {
     axios
-      .post ('https://restapi.cogenius.shop/api/jfac20/participants', values, {
+      .post ('https://infinityapis.com/api/jfac20/participants', values, {
         headers: {Accept: 'application/json'},
       })
       .then (function (res) {

@@ -7,18 +7,13 @@ import "../css/animation.css"
 export default () => (
   <StaticQuery
     query={graphql`
-    query{
-      ApisRefacc {
-        menus {
-          nodes {
-            menuItems {
-              edges {
-                node {
-                  label
-                  url
-                }
-              }
-            }
+    query {
+      allMenuJson {
+        edges {
+          node {
+            id
+            link
+            nom
           }
         }
       }
@@ -31,15 +26,15 @@ export default () => (
           <Banner />
           <div className="bg-black w-0 h-0 hidden">menu</div>
           <Navbar>
-            {data.ApisRefacc.menus.nodes[0].menuItems.edges.map(node => (
+            {data.allMenuJson.edges.map(node => (
               <Link
                 className=" text-lg lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-grefacc text-black font-bold"
                 exact
-                to={node.node.url}
-                key={node.node.id}
+                to={node.link}
+                key={node.id}
                 activeClassName="active"
               >
-                {node.node.label}
+                {node.nom}
               </Link>
             ))}
           </Navbar>

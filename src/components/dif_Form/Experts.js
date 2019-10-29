@@ -134,7 +134,7 @@ const Experts = withFormik ({
   }),
   handleSubmit (values, {resetForm, setErrors, setSubmitting}) {
     axios
-      .post ('https://restapi.cogenius.shop/api/jfac20/experts', values, {
+      .post ('https://infinityapis.com/api/jfac20/experts', values, {
         headers: {Accept: 'application/json'},
       })
       .then (function (res) {

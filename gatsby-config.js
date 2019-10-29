@@ -75,17 +75,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-graphql",
-      options: {
-    
-        typeName: "apisRefacc",
-      
-        fieldName: "ApisRefacc",
-      
-        url: "https://infinityapis.com/refaccapis/graphql",
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -142,7 +131,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: "pages",
-        path: `${__dirname}/content/pages`,
+        path: `./content/pages`,
       },
     },
     {
