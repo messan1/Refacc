@@ -31,3 +31,5 @@ fields:
     max: 
     labelField: 
   label: Vidéos
+pages:
+- content/pages/videos.json
