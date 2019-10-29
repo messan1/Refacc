@@ -18,7 +18,7 @@ fields:
       required: false
       wysiwyg: true
       schema:
-        format: html-blocks
+        format: html
     label: Titre de la bannière
   - name: texte_de_la_baniere
     type: text
@@ -49,7 +49,7 @@ fields:
       required: false
       wysiwyg: true
       schema:
-        format: html-blocks
+        format: html
     label: Titre de l'en-tête
   - name: contenu_de_l_en-tete
     type: textarea
