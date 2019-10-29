@@ -27,22 +27,37 @@ export default () => (
     render={data => (
       <div className="flex flex-1 justify-around items-start h-auto mb-24 md:flex-no-wrap sm:flex-wrap tiny:flex-wrap">
         <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
-          <LazyLoadImage
+        {data.allPagesJson.edges.map(
+              edge =>
+                edge.node.about &&
+                <LazyLoadImage
             effect="blur"
-            src={"https://res.cloudinary.com/infinityapis/image/upload"+data.allPagesJson.edges[3].node.about.image_du_a_propos}
+            src={"https://res.cloudinary.com/infinityapis/image/upload"+edge.node.about.image_du_a_propos}
             className="p-0 object-cover h-auto xl:max-w-sm lg:max-w-sm md:max-w-sm mdi:max-w-sm sm:max-w-xs tiny:max-w-xs p-6 "
-            alt={data.allPagesJson.edges[3].node.about.titre_about}
+            alt={edge.node.about.titre_about}
           />
+            )}
+          
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
           <div className="w-2/4 bg-white md:ml-8 self-start sm:w-full sm:m-0 tiny:w-full">
             <h5 className="font-bold text-sm mb-2 text-grefacc">A propos</h5>
             <h6 className="font-bold text-2xl mb-2">
-              {data.allPagesJson.edges[3].node.about.titre_about}
+            {data.allPagesJson.edges.map(
+              edge =>
+                edge.node.header &&
+                edge.node.about.titre_about
+            )}
+              
             </h6>
             <p className="text-justify text-gray-600">
-              {ReactHtmlParser(data.allPagesJson.edges[3].node.about.contenu_du_a_propos)}
+            {data.allPagesJson.edges.map(
+              edge =>
+                edge.node.header &&
+                ReactHtmlParser(edge.node.about.contenu_du_a_propos)
+            )}
+              
             </p>
             <div className="mt-8 border-4 border-grefacc flex justify-around items-center">
               <span className="xl:text-7xl font-bold md:text-6xl text-grefacc m-4 tiny:text-5xl lg:text-6xl md:text-4xl lg:m-0">

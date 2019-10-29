@@ -17,7 +17,6 @@ import ScrollAnimation from "react-animate-on-scroll"
 //Gatsby graphql
 import { graphql, StaticQuery } from "gatsby"
 
-
 export default () => (
   <StaticQuery
     query={graphql`
@@ -47,7 +46,6 @@ export default () => (
       }
     `}
     render={data => {
-      data=data.allPagesJson.edges[0].node
       return (
         <div>
           <header className="inf-j20 flex justify-center flex-row pt-24 pb-24 items-center flex-wrap p-8 relative">
@@ -89,27 +87,41 @@ export default () => (
                 <div className="flex xl:h-64 mdi:h-64 lg:h-64 md:lg:h-64 mb-8 justify-center flex-wrap items-center mdi:flex-col mdi:relative max-w-4xl m-auto">
                   <div className="shadow-lg h-auto max-w-lg p-8 mdi:absolute mdi:mb-8  left-0 bg-white">
                     <h3 className="font-bold text-3xl mb-2">
-                      {data.a_propos_des_jfac.title}
+                      {data.allPagesJson.edges.map(
+                        edge =>
+                          edge.node.a &&
+                          edge.node.a_propos_des_jfac &&
+                          edge.node.a_propos_des_jfac.title
+                      )}
                     </h3>
                     <p className="text-justify m-4">
-                      {ReactHtmlParser(
-                        data.a_propos_des_jfac.contenu
+                      {data.allPagesJson.edges.map(
+                        edge =>
+                          edge.node.a &&
+                          edge.node.a_propos_des_jfac &&
+                          ReactHtmlParser(edge.node.a_propos_des_jfac.contenu)
                       )}
                     </p>
                   </div>
 
                   <div className="m-2 order-first h-auto max-w-4xl sm:max-w- mdi:max-w-sm ">
-                    <LazyLoadImage
-                      effect="blur"
-                      src={
-                        "https://res.cloudinary.com/infinityapis/image/upload" +
-                        data.a_propos_des_jfac.image
-                      }
-                      alt=""
-                      className="object-cover max-w-sm h-auto w-full mdi:absolute"
-                      style={{ left: "490px", bottom: "25px" }}
-                      placeholderSrc={place}
-                    />
+                    {data.allPagesJson.edges.map(
+                      edge =>
+                        edge.node.a &&
+                        edge.node.a_propos_des_jfac && (
+                          <LazyLoadImage
+                            effect="blur"
+                            src={
+                              "https://res.cloudinary.com/infinityapis/image/upload" +
+                              edge.node.a_propos_des_jfac.image
+                            }
+                            alt=""
+                            className="object-cover max-w-sm h-auto w-full mdi:absolute"
+                            style={{ left: "490px", bottom: "25px" }}
+                            placeholderSrc={place}
+                          />
+                        )
+                    )}
                   </div>
                 </div>
               </ScrollAnimation>
@@ -119,24 +131,29 @@ export default () => (
               <p className="text-center text-grefacc mt-2 font-bold text-xl">
                 Les avis
               </p>
-              {data.a.map(avis => (
-                <div className="w-full flex justify-center flex-wrap flex-row ">
-                  <ScrollAnimation
-                    animateIn={avis.animationin}
-                    animateOut={avis.animationout}
-                    animateOnce={true}
-                  >
-                    <SpeakerBox
-                      img={avis.photo}
-                      person={avis.nom_prenoms_et_poste}
-                      titre={avis.le_titre}
-                      content={ReactHtmlParser(avis.contenu)}
-                      left={avis.left}
-                      right={avis.right}
-                    />
-                  </ScrollAnimation>
-                </div>
-              ))}
+              {data.allPagesJson.edges.map(
+                edge =>
+                  edge.node.a &&
+                  edge.node.a_propos_des_jfac &&
+                  edge.node.a.map(avis => (
+                    <div className="w-full flex justify-center flex-wrap flex-row ">
+                      <ScrollAnimation
+                        animateIn={avis.animationin}
+                        animateOut={avis.animationout}
+                        animateOnce={true}
+                      >
+                        <SpeakerBox
+                          img={avis.photo}
+                          person={avis.nom_prenoms_et_poste}
+                          titre={avis.le_titre}
+                          content={ReactHtmlParser(avis.contenu)}
+                          left={avis.left}
+                          right={avis.right}
+                        />
+                      </ScrollAnimation>
+                    </div>
+                  ))
+              )}
 
               <p className="text-center font-bold text-4xl mb-8">
                 EDITION <span className="text-jfaccolor">JFAC 2020</span>

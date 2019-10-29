@@ -14,8 +14,6 @@ import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
 import PartnersLogo from "./PartnersLogo"
 
-
-
 const Partners = () => (
   <StaticQuery
     query={graphql`
@@ -73,17 +71,19 @@ const Partners = () => (
               dotsDisabled={true}
               buttonsDisabled={true}
             >
-              {data.allPagesJson.edges[2].node.partenaires.map(function(item) {
-                return (
-                  <PartnersLogo
-                    img={
-                      "https://res.cloudinary.com/infinityapis/image/upload" +
-                      item
-                    }
-                    alt=""
-                  />
-                )
-              })}
+              {data.allPagesJson.edges.map(
+                edge =>
+                  edge.node.partenaires &&
+                  edge.node.partenaires.map(item => (
+                    <PartnersLogo
+                      img={
+                        "https://res.cloudinary.com/infinityapis/image/upload" +
+                        item
+                      }
+                      alt=""
+                    />
+                  ))
+              )}
             </AliceCarousel>
           </div>
         </div>
