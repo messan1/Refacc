@@ -1,4 +1,33 @@
 ---
 label: Vidéothèque
 hide_body: true
-fields: []
+fields:
+- name: videos
+  type: field_group_list
+  fields:
+  - name: lien
+    type: text
+    config:
+      required: true
+    label: Lien
+  - name: image_de_la_video
+    type: text
+    config:
+      required: false
+    label: Image de la vidéo
+  - name: titre_de_la_video
+    type: text
+    config:
+      required: true
+    label: Titre de la vidéo
+  - name: tag_de_la_video
+    type: text
+    config:
+      required: false
+    label: Tag de la vidéo
+    default: Ecologie
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Vidéos
