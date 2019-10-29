@@ -3,34 +3,40 @@
     "cta": "En savoir plus",
     "titre_de_l_en-tete": "LANCEMENT DES JFAC 2020",
     "contenu_de_l_en-tete": "<p></p><p>Les Journées africaines de l’écologie et des changements climatiques (JFAC 2020),qui sont à leur 2ème édition,sont le 1er forum d’échange et de marché Ouest africain pour les bonnes pratiques écologiques et technologies vertes.</p><p></p><p><strong><br></strong></p>",
-    "image_de_l_en-tete": "/v1572263050/refacc/images/slide1_glkc4f.jpg"
+    "image_de_l_en-tete": "/v1572263050/refacc/images/slide1_glkc4f.jpg",
+    "title": ""
   },
   "titre_de_la_page": "Acceuil",
   "banner": {
-    "titre_de_la_banniere": "Lancement des JFAC 2020",
+    "titre_de_la_banniere": "Lancement des &lt;span style=\"color:#84c87f;\"&gt;JFAC 2020&lt;/span&gt;",
     "texte_de_la_baniere": "Les Journées africaines de l’écologie et des changements climatiques",
-    "image_de_la_banniere": "/v1572263948/refacc/images/2020b_lvhi0o.jpg"
+    "image_de_la_banniere": "/v1572263948/refacc/images/2020b_lvhi0o.jpg",
+    "title": ""
   },
   "about": {
     "titre_about": "Le REFACC en quelques mots",
     "contenu_du_a_propos": "<p class=\"text-justify text-gray-600\"></p><p>Le réseau des Experts africains pour les Forêt l’agriculture,l’énergie et les changements climatiques, en abrégé REFACC est une association non lucrative créée par un consortion d’expert africains en vue de renforcerle dialogue et la coopération avec les acteurs des pays africains. Ce réseau apolitique se propose d’apporter une dynamique à la lutte contre les changements climatiques dans les collectivités et aider les communautés rurales les plus vulnérables.</p><p></p><p><br></p>",
-    "image_du_a_propos": "/v1572263072/refacc/images/3_q3d3kd.jpg"
+    "image_du_a_propos": "/v1572263072/refacc/images/3_q3d3kd.jpg",
+    "title": ""
   },
   "activities": [
     {
       "image_de_l_activite": "/v1572263099/refacc/images/act2_c1ft4f.jpg",
       "titre_de_l_activite": "Conférences",
-      "contenu_de_l_activite": "<p class=\"text-justify text-gray-600\"></p><p class=\"text-justify text-gray-600\">Deux conférences de haut niveau devront traiter les deux dimensions du thème des Journées. Ces deux conférences seront organisées sous forme de panel, avec la possibilité aux participants de poser des questions</p><p></p><p><br></p>"
+      "contenu_de_l_activite": "<p class=\"text-justify text-gray-600\"></p><p class=\"text-justify text-gray-600\">Deux conférences de haut niveau devront traiter les deux dimensions du thème des Journées. Ces deux conférences seront organisées sous forme de panel, avec la possibilité aux participants de poser des questions</p><p></p><p><br></p>",
+      "title": ""
     },
     {
       "image_de_l_activite": "/v1572263121/refacc/images/act2_i12jjb.png",
       "titre_de_l_activite": "Expositions",
-      "contenu_de_l_activite": "<p class=\"text-justify text-gray-600\"></p><p class=\"text-justify text-gray-600\">Les innovations technologiques en matière d’écologie sont encouragées à venir présenter leurs produits au grand public. Avec une représentation des secteurs: Partenaires internationaux,Entreprises, produits bios, élevage bio,Innovations, etc</p><p></p><p><br></p>"
+      "contenu_de_l_activite": "<p class=\"text-justify text-gray-600\"></p><p class=\"text-justify text-gray-600\">Les innovations technologiques en matière d’écologie sont encouragées à venir présenter leurs produits au grand public. Avec une représentation des secteurs: Partenaires internationaux,Entreprises, produits bios, élevage bio,Innovations, etc</p><p></p><p><br></p>",
+      "title": ""
     },
     {
       "image_de_l_activite": "/v1572263139/refacc/images/act1_iaelql.png",
       "titre_de_l_activite": "Ateliers Thématiques",
-      "contenu_de_l_activite": "<p class=\"text-justify text-gray-600\"></p><p>Les ateliers sont de véritables rencontres de partage d’idées, d’expériences et d’outils professionnels en matière d’écologie et de changement climatique. Vu l’engouement et la situation climatique préoccupante.</p><p></p><p><br></p>"
+      "contenu_de_l_activite": "<p class=\"text-justify text-gray-600\"></p><p>Les ateliers sont de véritables rencontres de partage d’idées, d’expériences et d’outils professionnels en matière d’écologie et de changement climatique. Vu l’engouement et la situation climatique préoccupante.</p><p></p><p><br></p>",
+      "title": ""
     }
   ],
   "videos": [
@@ -46,5 +52,6 @@
       "titre_de_la_video": "Mot du ministre de l'environnement et du développement durable lors des JFAC 2019",
       "lien_youtube_de_la_video": "#"
     }
-  ]
+  ],
+  "title": ""
 }
