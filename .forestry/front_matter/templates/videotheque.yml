@@ -5,16 +5,16 @@ fields:
 - name: videos
   type: field_group_list
   fields:
-  - name: lien
-    type: text
-    config:
-      required: true
-    label: Lien
   - name: titre_de_la_video
     type: text
     config:
       required: true
     label: Titre de la vidéo
+  - name: lien
+    type: text
+    config:
+      required: true
+    label: Lien
   - name: tag_de_la_video
     type: text
     config:
