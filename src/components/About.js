@@ -46,7 +46,7 @@ export default () => (
             <h6 className="font-bold text-2xl mb-2">
             {data.allPagesJson.edges.map(
               edge =>
-                edge.node.header &&
+                edge.node.about &&
                 edge.node.about.titre_about
             )}
               
@@ -54,7 +54,7 @@ export default () => (
             <p className="text-justify text-gray-600">
             {data.allPagesJson.edges.map(
               edge =>
-                edge.node.header &&
+                edge.node.about &&
                 ReactHtmlParser(edge.node.about.contenu_du_a_propos)
             )}
               

@@ -71,18 +71,15 @@ const Partners = () => (
               dotsDisabled={true}
               buttonsDisabled={true}
             >
-              {data.allPagesJson.edges.map(
-                edge =>
-                  edge.node.partenaires &&
-                  edge.node.partenaires.map(item => (
-                    <PartnersLogo
+              {data.allPagesJson.edges[3].node.partenaires.map(
+                item =>
+                <PartnersLogo
                       img={
                         "https://res.cloudinary.com/infinityapis/image/upload" +
                         item
                       }
                       alt=""
                     />
-                  ))
               )}
             </AliceCarousel>
           </div>
