@@ -52,37 +52,38 @@ const Partners = () => (
             <h6 className="font-bold text-3xl ml-4  mt-8">NOS PARTENAIRES</h6>
           </div>
           <div className="bg-grefacc h-1 w-16 m-auto mb-8" />
-          <div className="flex items-center flex-wrap justify-center">
-            <AliceCarousel
-              responsive={{
-                0: { items: 2 },
-                355: { items: 3 },
-                552: { items: 3 },
-                956: { items: 5 },
-                1024: { items: 9 },
-              }}
-              autoPlayInterval={1000}
-              autoPlayDirection="rtl"
-              autoPlay={true}
-              fadeOutAnimation={true}
-              mouseDragEnabled={false}
-              playButtonEnabled={false}
-              disableAutoPlayOnAction={true}
-              dotsDisabled={true}
-              buttonsDisabled={true}
-            >
-              {data.allPagesJson.edges[3].node.partenaires.map(
-                item =>
-                <PartnersLogo
-                      img={
-                        "https://res.cloudinary.com/infinityapis/image/upload" +
-                        item
-                      }
-                      alt=""
-                    />
-              )}
-            </AliceCarousel>
-          </div>
+          {data.allPagesJson.edges.map(edge => (edge.node.partenaires &&
+            <div className="flex items-center flex-wrap justify-center">
+              <AliceCarousel
+                responsive={{
+                  0: { items: 2 },
+                  355: { items: 3 },
+                  552: { items: 3 },
+                  956: { items: 5 },
+                  1024: { items: 9 },
+                }}
+                autoPlayInterval={1000}
+                autoPlayDirection="rtl"
+                autoPlay={true}
+                fadeOutAnimation={true}
+                mouseDragEnabled={false}
+                playButtonEnabled={false}
+                disableAutoPlayOnAction={true}
+                dotsDisabled={true}
+                buttonsDisabled={true}
+              >
+                {edge.node.partenaires.map(item => (
+                  <PartnersLogo
+                    img={
+                      "https://res.cloudinary.com/infinityapis/image/upload" +
+                      item
+                    }
+                    alt=""
+                  />
+                ))}
+              </AliceCarousel>
+            </div>
+          ))}
         </div>
       )
     }}
