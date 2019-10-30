@@ -29,7 +29,7 @@ sections:
 - type: document
   path: content/pages/galerie.json
   label: Galerie des JFAC
-upload_dir: refacc/images
+upload_dir: ''
 public_path: ''
 front_matter_path: ''
 use_front_matter_path: 
