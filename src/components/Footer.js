@@ -150,7 +150,7 @@ const Footer = withFormik ({
   }),
   handleSubmit (values, {resetForm, setErrors, setSubmitting}) {
     axios
-      .post ('https://infinityapis.com/api/jfac20/contact', values, {
+      .post ('https://refaccapi-master-ih9jf28sh.now.sh/api/jfac20/contact', values, {
         headers: {Accept: 'application/json'},
       })
       .then (function (res) {

@@ -75,7 +75,7 @@ const Partners = () => (
                 {edge.node.partenaires.map(item => (
                   <PartnersLogo
                     img={
-                      "https://res.cloudinary.com/infinityapis/image/upload" +
+                     
                       item
                     }
                     alt=""
